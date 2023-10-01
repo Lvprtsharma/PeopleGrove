@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="extentlisteners.ExtentListeners"></listener>
+	</listeners>
+	
+	<test name="Assignment 1">
+		<parameter name="username" value="tester2@peoplegrove.com" />
+		<parameter name="password" value="Automation@123" />
+		<groups>
+			<dependencies>
+				<group name="" depends-on=""></group>
+                <group name="Assignment" depends-on="Login"></group>
+			</dependencies>
+        </groups>
+		<classes>
+			<class name="testcases.LoginTest" />
+			<class name="testcases.Assignment1" />
+			<class name="testcases.LogOut" />
+		</classes>
+	</test>
+
+	<test name="Assignment 2">
+		<parameter name="username" value="tester2@peoplegrove.com" />
+		<parameter name="password" value="Automation@123" />
+		<groups>
+			<dependencies>
+				<group name="" depends-on=""></group>
+                <group name="Assignment" depends-on="Login"></group>
+			</dependencies>
+        </groups>
+		<classes>
+			<class name="testcases.LoginTest" />
+			<class name="testcases.Assignment2" />
+			<class name="testcases.LogOut" />
+		</classes>
+	</test>
+	
+</suite>
