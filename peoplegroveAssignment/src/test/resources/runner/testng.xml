@@ -6,7 +6,7 @@
 	</listeners>
 	
 	<test name="Assignment 1">
-		<parameter name="username" value="tester2@peoplegrove.com" />
+		<parameter name="username" value="dummytest@peoplegrove.com" />
 		<parameter name="password" value="Automation@123" />
 		<groups>
 			<dependencies>
@@ -22,7 +22,7 @@
 	</test>
 
 	<test name="Assignment 2">
-		<parameter name="username" value="tester2@peoplegrove.com" />
+		<parameter name="username" value="dummytest@peoplegrove.com" />
 		<parameter name="password" value="Automation@123" />
 		<groups>
 			<dependencies>
