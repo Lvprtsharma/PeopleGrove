@@ -59,6 +59,7 @@ public class Assignment2 extends CommonUtil {
 			click("homeBtn_XPATH");				//Clicking on HomeButton
 			System.out.println("Clicked on Home Buttons!!");
 			
+			Thread.sleep(800);
 			jsclick("updateBtn_XPATH");			//Clicking on Update Button
 			System.out.println("Clicked on Update Option!!");
 			
