@@ -2,7 +2,7 @@
 <testng-results ignored="8" total="21" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-01T11:01:43 IST" name="Suite" finished-at="2023-10-01T11:04:39 IST" duration-ms="176282">
+  <suite started-at="2023-10-01T12:54:14 IST" name="Suite" finished-at="2023-10-01T12:55:48 IST" duration-ms="94330">
     <groups>
       <group name="Assignment">
         <method signature="Assignment1.AskQuestionCheck()[pri:3, instance:testcases.Assignment1@19b93fa8]" name="AskQuestionCheck" class="testcases.Assignment1"/>
@@ -20,19 +20,19 @@
         <method signature="LoginTest.Login(java.lang.String,java.lang.String)[pri:1, instance:testcases.LoginTest@3568f9d2]" name="Login" class="testcases.LoginTest"/>
       </group> <!-- Login -->
     </groups>
-    <test started-at="2023-10-01T11:01:43 IST" name="Assignment 1" finished-at="2023-10-01T11:04:02 IST" duration-ms="139248">
+    <test started-at="2023-10-01T12:54:14 IST" name="Assignment 1" finished-at="2023-10-01T12:55:04 IST" duration-ms="50222">
       <class name="testcases.LogOut">
-        <test-method signature="LogOutCheck()[pri:0, instance:testcases.LogOut@7e6ef134]" started-at="2023-10-01T11:03:58 IST" name="LogOutCheck" depends-on-groups="Assignment" finished-at="2023-10-01T11:04:02 IST" duration-ms="4824" status="PASS">
+        <test-method signature="LogOutCheck()[pri:0, instance:testcases.LogOut@7e6ef134]" started-at="2023-10-01T12:54:58 IST" name="LogOutCheck" depends-on-groups="Assignment" finished-at="2023-10-01T12:55:04 IST" duration-ms="6112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogOutCheck -->
       </class> <!-- testcases.LogOut -->
       <class name="testcases.LoginTest">
-        <test-method signature="Login(java.lang.String,java.lang.String)[pri:1, instance:testcases.LoginTest@335b5620]" started-at="2023-10-01T11:01:43 IST" name="Login" finished-at="2023-10-01T11:01:51 IST" duration-ms="7986" status="PASS">
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:1, instance:testcases.LoginTest@335b5620]" started-at="2023-10-01T12:54:14 IST" name="Login" finished-at="2023-10-01T12:54:20 IST" duration-ms="6737" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[tester2@peoplegrove.com]]>
+                <![CDATA[dummytest@peoplegrove.com]]>
               </value>
             </param>
             <param index="1">
@@ -46,15 +46,15 @@
         </test-method> <!-- Login -->
       </class> <!-- testcases.LoginTest -->
       <class name="testcases.Assignment1">
-        <test-method signature="HomePageCheck()[pri:2, instance:testcases.Assignment1@19b93fa8]" started-at="2023-10-01T11:01:51 IST" name="HomePageCheck" depends-on-groups="Login, Login" finished-at="2023-10-01T11:01:51 IST" duration-ms="114" status="PASS">
+        <test-method signature="HomePageCheck()[pri:2, instance:testcases.Assignment1@19b93fa8]" started-at="2023-10-01T12:54:20 IST" name="HomePageCheck" depends-on-groups="Login, Login" finished-at="2023-10-01T12:54:21 IST" duration-ms="495" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomePageCheck -->
-        <test-method signature="AskQuestionCheck()[pri:3, instance:testcases.Assignment1@19b93fa8]" started-at="2023-10-01T11:01:51 IST" name="AskQuestionCheck" depends-on-groups="Login" finished-at="2023-10-01T11:03:44 IST" duration-ms="112738" status="PASS">
+        <test-method signature="AskQuestionCheck()[pri:3, instance:testcases.Assignment1@19b93fa8]" started-at="2023-10-01T12:54:21 IST" name="AskQuestionCheck" depends-on-groups="Login" finished-at="2023-10-01T12:54:44 IST" duration-ms="22813" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AskQuestionCheck -->
-        <test-method signature="JobsPageCheck(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testcases.Assignment1@19b93fa8]" started-at="2023-10-01T11:03:44 IST" name="JobsPageCheck" data-provider="jobPage" depends-on-groups="Login" finished-at="2023-10-01T11:03:47 IST" depends-on-methods="testcases.Assignment1.AskQuestionCheck" duration-ms="3253" status="PASS">
+        <test-method signature="JobsPageCheck(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testcases.Assignment1@19b93fa8]" started-at="2023-10-01T12:54:44 IST" name="JobsPageCheck" data-provider="jobPage" depends-on-groups="Login" finished-at="2023-10-01T12:54:48 IST" depends-on-methods="testcases.Assignment1.AskQuestionCheck" duration-ms="4251" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,7 +75,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JobsPageCheck -->
-        <test-method signature="InboxPageCheck(java.lang.String)[pri:4, instance:testcases.Assignment1@19b93fa8]" started-at="2023-10-01T11:03:47 IST" name="InboxPageCheck" data-provider="inboxPage" depends-on-groups="Login" finished-at="2023-10-01T11:03:52 IST" depends-on-methods="testcases.Assignment1.JobsPageCheck" duration-ms="4475" status="PASS">
+        <test-method signature="InboxPageCheck(java.lang.String)[pri:4, instance:testcases.Assignment1@19b93fa8]" started-at="2023-10-01T12:54:48 IST" name="InboxPageCheck" data-provider="inboxPage" depends-on-groups="Login" finished-at="2023-10-01T12:54:53 IST" depends-on-methods="testcases.Assignment1.JobsPageCheck" duration-ms="4966" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -86,47 +86,47 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InboxPageCheck -->
-        <test-method signature="RecrtuierPageCheck()[pri:5, instance:testcases.Assignment1@19b93fa8]" started-at="2023-10-01T11:03:52 IST" name="RecrtuierPageCheck" depends-on-groups="Login" finished-at="2023-10-01T11:03:58 IST" depends-on-methods="testcases.Assignment1.InboxPageCheck" duration-ms="5766" status="PASS">
+        <test-method signature="RecrtuierPageCheck()[pri:5, instance:testcases.Assignment1@19b93fa8]" started-at="2023-10-01T12:54:53 IST" name="RecrtuierPageCheck" depends-on-groups="Login" finished-at="2023-10-01T12:54:58 IST" depends-on-methods="testcases.Assignment1.InboxPageCheck" duration-ms="4681" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RecrtuierPageCheck -->
       </class> <!-- testcases.Assignment1 -->
     </test> <!-- Assignment 1 -->
-    <test started-at="2023-10-01T11:04:03 IST" name="Assignment 2" finished-at="2023-10-01T11:04:39 IST" duration-ms="36526">
+    <test started-at="2023-10-01T12:55:05 IST" name="Assignment 2" finished-at="2023-10-01T12:55:48 IST" duration-ms="42983">
       <class name="testcases.LogOut">
-        <test-method signature="LogOutCheck()[pri:0, instance:testcases.LogOut@3e7dd664]" started-at="2023-10-01T11:04:35 IST" name="LogOutCheck" depends-on-groups="Assignment" finished-at="2023-10-01T11:04:39 IST" duration-ms="4832" status="PASS">
+        <test-method signature="LogOutCheck()[pri:0, instance:testcases.LogOut@3e7dd664]" started-at="2023-10-01T12:55:43 IST" name="LogOutCheck" depends-on-groups="Assignment" finished-at="2023-10-01T12:55:48 IST" duration-ms="5256" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogOutCheck -->
       </class> <!-- testcases.LogOut -->
       <class name="testcases.Assignment2">
-        <test-method signature="CareerPageCheck()[pri:1, instance:testcases.Assignment2@71c27ee8]" started-at="2023-10-01T11:04:07 IST" name="CareerPageCheck" depends-on-groups="Login, Login" finished-at="2023-10-01T11:04:08 IST" duration-ms="182" status="PASS">
+        <test-method signature="CareerPageCheck()[pri:1, instance:testcases.Assignment2@71c27ee8]" started-at="2023-10-01T12:55:11 IST" name="CareerPageCheck" depends-on-groups="Login, Login" finished-at="2023-10-01T12:55:11 IST" duration-ms="273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CareerPageCheck -->
-        <test-method signature="InspirationPathCheck()[pri:2, instance:testcases.Assignment2@71c27ee8]" started-at="2023-10-01T11:04:08 IST" name="InspirationPathCheck" depends-on-groups="Login" finished-at="2023-10-01T11:04:28 IST" depends-on-methods="testcases.Assignment2.CareerPageCheck" duration-ms="19994" status="PASS">
+        <test-method signature="InspirationPathCheck()[pri:2, instance:testcases.Assignment2@71c27ee8]" started-at="2023-10-01T12:55:11 IST" name="InspirationPathCheck" depends-on-groups="Login" finished-at="2023-10-01T12:55:34 IST" depends-on-methods="testcases.Assignment2.CareerPageCheck" duration-ms="23233" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InspirationPathCheck -->
-        <test-method signature="UpdateCheck()[pri:3, instance:testcases.Assignment2@71c27ee8]" started-at="2023-10-01T11:04:28 IST" name="UpdateCheck" depends-on-groups="Login" finished-at="2023-10-01T11:04:30 IST" depends-on-methods="testcases.Assignment2.CareerPageCheck" duration-ms="1919" status="PASS">
+        <test-method signature="UpdateCheck()[pri:3, instance:testcases.Assignment2@71c27ee8]" started-at="2023-10-01T12:55:34 IST" name="UpdateCheck" depends-on-groups="Login" finished-at="2023-10-01T12:55:37 IST" depends-on-methods="testcases.Assignment2.CareerPageCheck" duration-ms="3010" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UpdateCheck -->
-        <test-method signature="RecentlyViewCheck()[pri:4, instance:testcases.Assignment2@71c27ee8]" started-at="2023-10-01T11:04:30 IST" name="RecentlyViewCheck" depends-on-groups="Login" finished-at="2023-10-01T11:04:35 IST" depends-on-methods="testcases.Assignment2.InspirationPathCheck, testcases.Assignment2.CareerPageCheck" duration-ms="5016" status="PASS">
+        <test-method signature="RecentlyViewCheck()[pri:4, instance:testcases.Assignment2@71c27ee8]" started-at="2023-10-01T12:55:37 IST" name="RecentlyViewCheck" depends-on-groups="Login" finished-at="2023-10-01T12:55:43 IST" depends-on-methods="testcases.Assignment2.InspirationPathCheck, testcases.Assignment2.CareerPageCheck" duration-ms="5307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RecentlyViewCheck -->
       </class> <!-- testcases.Assignment2 -->
       <class name="testcases.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@3568f9d2]" started-at="2023-10-01T11:01:39 IST" name="setup" finished-at="2023-10-01T11:01:43 IST" duration-ms="4313" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@3568f9d2]" started-at="2023-10-01T12:54:06 IST" name="setup" finished-at="2023-10-01T12:54:14 IST" duration-ms="7920" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Login(java.lang.String,java.lang.String)[pri:1, instance:testcases.LoginTest@3568f9d2]" started-at="2023-10-01T11:04:03 IST" name="Login" finished-at="2023-10-01T11:04:07 IST" duration-ms="4570" status="PASS">
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:1, instance:testcases.LoginTest@3568f9d2]" started-at="2023-10-01T12:55:05 IST" name="Login" finished-at="2023-10-01T12:55:11 IST" duration-ms="5871" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[tester2@peoplegrove.com]]>
+                <![CDATA[dummytest@peoplegrove.com]]>
               </value>
             </param>
             <param index="1">
@@ -138,7 +138,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@3568f9d2]" started-at="2023-10-01T11:04:39 IST" name="tearDown" finished-at="2023-10-01T11:04:40 IST" duration-ms="308" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@3568f9d2]" started-at="2023-10-01T12:55:48 IST" name="tearDown" finished-at="2023-10-01T12:55:48 IST" duration-ms="452" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
