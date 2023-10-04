@@ -4,21 +4,17 @@
   <listeners>
     <listener class-name="extentlisteners.ExtentListeners"/>
   </listeners>
-  <test thread-count="5" name="Assignment 1(failed)">
+  <test thread-count="5" name="Assignment 2(failed)">
     <parameter name="password" value="Automation@123"/>
-    <parameter name="username" value="tester2@peoplegrove.com"/>
+    <parameter name="username" value="dummytest@peoplegrove.com"/>
     <classes>
-      <class name="testcases.Assignment1">
+      <class name="testcases.LoginTest">
         <methods>
-          <include name="RecrtuierPageCheck"/>
           <include name="setup"/>
+          <include name="Login" invocation-numbers="0"/>
           <include name="tearDown"/>
-          <include name="AskQuestionCheck"/>
-          <include name="JobsPageCheck"/>
-          <include name="HomePageCheck"/>
-          <include name="InboxPageCheck"/>
         </methods>
-      </class> <!-- testcases.Assignment1 -->
+      </class> <!-- testcases.LoginTest -->
       <class name="testcases.LogOut">
         <methods>
           <include name="setup"/>
@@ -26,13 +22,16 @@
           <include name="LogOutCheck"/>
         </methods>
       </class> <!-- testcases.LogOut -->
-      <class name="testcases.LoginTest">
+      <class name="testcases.Assignment2">
         <methods>
           <include name="setup"/>
-          <include name="Login"/>
           <include name="tearDown"/>
+          <include name="RecentlyViewCheck"/>
+          <include name="UpdateCheck"/>
+          <include name="InspirationPathCheck"/>
+          <include name="CareerPageCheck"/>
         </methods>
-      </class> <!-- testcases.LoginTest -->
+      </class> <!-- testcases.Assignment2 -->
     </classes>
-  </test> <!-- Assignment 1(failed) -->
+  </test> <!-- Assignment 2(failed) -->
 </suite> <!-- Failed suite [Suite] -->

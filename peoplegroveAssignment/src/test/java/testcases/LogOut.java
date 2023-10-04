@@ -6,7 +6,7 @@ import utilities.CommonUtil;
 
 public class LogOut extends CommonUtil {
 
-	@Test(dependsOnGroups = {"Assignment"})
+	@Test(groups = {"Logout"})
 	// Method to perform a logout check
 	public void LogOutCheck() {
 		try {

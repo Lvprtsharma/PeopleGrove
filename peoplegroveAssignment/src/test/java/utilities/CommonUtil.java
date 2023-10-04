@@ -8,15 +8,16 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.ElementNotInteractableException;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
 
 import base.BaseTest;
 import extentlisteners.ExtentListeners;
@@ -27,20 +28,47 @@ public class CommonUtil extends BaseTest {
 	 * This common Utility is used to create a common factory of all methods being
 	 * used in test scripts
 	 */
-	
+
+	static Wait<WebDriver> wait = null; // Declare wait outside of try block
+	static int maxRetries = 5; // Set the maximum number of retries
+	static int retries = 0;
+
+	// Explicit Wait Method
+	public static Wait<WebDriver> explicitWait() {
+
+		try {
+			wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(config.getProperty("explicit.wait"))));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return wait;
+	}
+
 	// Click Method to click on an element
 	public static void click(String locatorKey) {
 
 		if (locatorKey.endsWith("_XPATH")) {
-			try {
-				driver.findElement(By.xpath(OR.getProperty(locatorKey))).click();
-			}catch (ElementClickInterceptedException e) {
-				Wait<WebDriver> wait = new WebDriverWait(driver,
-						Duration.ofSeconds(Integer.parseInt(config.getProperty("explicit.wait"))));
-				wait.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty(locatorKey)))).click();
+
+			while (retries < maxRetries) {
+				try {
+					driver.findElement(By.xpath(OR.getProperty(locatorKey))).click();
+					break; // Break the loop if the actions are successful
+				} catch (StaleElementReferenceException e) {
+					System.out.println("Stale Element Reference Exception Occured!!");	
+				} catch (ElementClickInterceptedException e) {
+					JavascriptExecutor js = (JavascriptExecutor) driver;
+					js.executeScript("arguments[0].click();", driver.findElement(By.xpath(OR.getProperty(locatorKey))));
+					break;
+				} catch (NoSuchElementException e) {
+					explicitWait()
+							.until(ExpectedConditions.presenceOfElementLocated(By.xpath(OR.getProperty(locatorKey))))
+							.click();
+					break;
+				}
+				log.info("Clicking on an Element : " + locatorKey.split("_")[0]);
+				ExtentListeners.test.info("Clicking on an Element : " + locatorKey.split("_")[0]);
+				retries++;
 			}
-			log.info("Clicking on an Element : " + locatorKey.split("_")[0]);
-			ExtentListeners.test.info("Clicking on an Element : " + locatorKey.split("_")[0]);
 		}
 	}
 
@@ -51,9 +79,10 @@ public class CommonUtil extends BaseTest {
 			try {
 				driver.findElement(By.xpath(OR.getProperty(locatorKey))).sendKeys(value);
 			} catch (ElementNotInteractableException e) {
-				Wait<WebDriver> wait = new WebDriverWait(driver,
-						Duration.ofSeconds(Integer.parseInt(config.getProperty("explicit.wait"))));
-				wait.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty(locatorKey))))
+				explicitWait().until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty(locatorKey))))
+						.sendKeys(value);
+			} catch (NoSuchElementException e) {
+				explicitWait().until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty(locatorKey))))
 						.sendKeys(value);
 			}
 			log.info("Typing in an Element " + locatorKey.split("_")[0] + " and entered the value as " + value);
@@ -68,10 +97,7 @@ public class CommonUtil extends BaseTest {
 		try {
 			text = driver.findElement(By.xpath(OR.getProperty(locatorKey))).getText();
 		} catch (ElementNotInteractableException e) {
-			Wait<WebDriver> wait = new WebDriverWait(driver,
-					Duration.ofSeconds(Integer.parseInt(config.getProperty("explicit.wait"))));
-			
-			text = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty(locatorKey))))
+			text = explicitWait().until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty(locatorKey))))
 					.getText();
 		}
 		log.info("Text Read from an Element " + locatorKey.split("_")[0] + " and Captured the value as " + text);
@@ -95,12 +121,16 @@ public class CommonUtil extends BaseTest {
 
 	// Javascript click method to click for elements which are not clickable
 	// otherwise
-	public static void jsclick(String locatorKey) throws InterruptedException {
-		if (locatorKey.endsWith("_XPATH")) {
-			Thread.sleep(500);
-			WebElement element = driver.findElement(By.xpath(OR.getProperty(locatorKey)));
-			JavascriptExecutor js = (JavascriptExecutor) driver;
-			js.executeScript("arguments[0].click();", element);
+	public static void jsclick(String locatorKey) {
+		try {
+			if (locatorKey.endsWith("_XPATH")) {
+				Thread.sleep(500);
+				WebElement element = driver.findElement(By.xpath(OR.getProperty(locatorKey)));
+				JavascriptExecutor js = (JavascriptExecutor) driver;
+				js.executeScript("arguments[0].click();", element);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 		log.info("Clicking on an Element : " + locatorKey.split("_")[0]);
 		ExtentListeners.test.info("Clicking on an Element : " + locatorKey.split("_")[0]);
@@ -190,15 +220,15 @@ public class CommonUtil extends BaseTest {
 		ExtentListeners.test.info("Checking the count of Element  : " + locatorKey.split("_")[0]);
 		return elementList;
 	}
-	
+
 	// MouseHover Action
 	public static void mouseHover(String locatorKey) throws InterruptedException {
 		try {
 			Thread.sleep(2000);
 			WebElement element = driver.findElement(By.xpath(OR.getProperty(locatorKey)));
-	        Actions actions = new Actions(driver);
-	        actions.moveToElement(element).perform();
-		}catch (NoSuchElementException e) {
+			Actions actions = new Actions(driver);
+			actions.moveToElement(element).perform();
+		} catch (NoSuchElementException e) {
 			e.printStackTrace();
 		}
 	}

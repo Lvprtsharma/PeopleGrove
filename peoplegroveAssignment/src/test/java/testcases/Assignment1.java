@@ -17,7 +17,7 @@ public class Assignment1 extends CommonUtil {
 	String message2;
 	String inboxMessagefromDP;
 
-	@Test(priority = 2, dependsOnGroups =  {"Login"}, groups = {"Assignment"})
+	@Test(priority = 1, dependsOnGroups =  {"Login"}, groups = {"Assignment"})
 	public void HomePageCheck() {
 		try {
 			System.out.println("======================== Assignment 1 Started ========================");
@@ -31,7 +31,7 @@ public class Assignment1 extends CommonUtil {
 		}
 	}
 
-	@Test(priority = 3, groups = {"Assignment"})
+	@Test(priority = 2, dependsOnMethods = "HomePageCheck", groups = {"Assignment"})
 	public void AskQuestionCheck() throws InterruptedException {
 		try {
 			while (elementDisplayed("jobLoader_XPATH")) { // Check if loader is available then load all job links
