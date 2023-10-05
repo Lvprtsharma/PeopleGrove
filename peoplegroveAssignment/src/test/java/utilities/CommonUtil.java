@@ -54,7 +54,7 @@ public class CommonUtil extends BaseTest {
 					driver.findElement(By.xpath(OR.getProperty(locatorKey))).click();
 					break; // Break the loop if the actions are successful
 				} catch (StaleElementReferenceException e) {
-					System.out.println("Stale Element Reference Exception Occured!!");	
+					System.out.println("Stale Element Reference Exception Occured!!");
 				} catch (ElementClickInterceptedException e) {
 					JavascriptExecutor js = (JavascriptExecutor) driver;
 					js.executeScript("arguments[0].click();", driver.findElement(By.xpath(OR.getProperty(locatorKey))));
@@ -106,35 +106,35 @@ public class CommonUtil extends BaseTest {
 		return text;
 	}
 
-	// Click Method to click using action methods of action library
-	public static void actionclick(String locatorKey) throws InterruptedException {
-		if (locatorKey.endsWith("_XPATH")) {
-			Thread.sleep(500);
-			WebElement element = driver.findElement(By.xpath(OR.getProperty(locatorKey)));
-			Actions actions = new Actions(driver);
-			actions.moveToElement(element).click().build().perform();
-		}
-		log.info("Clicking on an Element : " + locatorKey.split("_")[0]);
-		ExtentListeners.test.info("Clicking on an Element : " + locatorKey.split("_")[0]);
+//	// Click Method to click using action methods of action library
+//	public static void actionclick(String locatorKey) throws InterruptedException {
+//		if (locatorKey.endsWith("_XPATH")) {
+//			Thread.sleep(500);
+//			WebElement element = driver.findElement(By.xpath(OR.getProperty(locatorKey)));
+//			Actions actions = new Actions(driver);
+//			actions.moveToElement(element).click().build().perform();
+//		}
+//		log.info("Clicking on an Element : " + locatorKey.split("_")[0]);
+//		ExtentListeners.test.info("Clicking on an Element : " + locatorKey.split("_")[0]);
+//
+//	}
 
-	}
-
-	// Javascript click method to click for elements which are not clickable
-	// otherwise
-	public static void jsclick(String locatorKey) {
-		try {
-			if (locatorKey.endsWith("_XPATH")) {
-				Thread.sleep(500);
-				WebElement element = driver.findElement(By.xpath(OR.getProperty(locatorKey)));
-				JavascriptExecutor js = (JavascriptExecutor) driver;
-				js.executeScript("arguments[0].click();", element);
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		log.info("Clicking on an Element : " + locatorKey.split("_")[0]);
-		ExtentListeners.test.info("Clicking on an Element : " + locatorKey.split("_")[0]);
-	}
+//	// Javascript click method to click for elements which are not clickable
+//	// otherwise
+//	public static void jsclick(String locatorKey) {
+//		try {
+//			if (locatorKey.endsWith("_XPATH")) {
+//				Thread.sleep(500);
+//				WebElement element = driver.findElement(By.xpath(OR.getProperty(locatorKey)));
+//				JavascriptExecutor js = (JavascriptExecutor) driver;
+//				js.executeScript("arguments[0].click();", element);
+//			}
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//		log.info("Clicking on an Element : " + locatorKey.split("_")[0]);
+//		ExtentListeners.test.info("Clicking on an Element : " + locatorKey.split("_")[0]);
+//	}
 
 	// Enter method to perform enter action
 	public static void enterClick(String locatorKey) throws InterruptedException {
@@ -147,32 +147,34 @@ public class CommonUtil extends BaseTest {
 	}
 
 	// Element Display method to check if an element is visible or not
-	public static boolean elementDisplayed(String locatorKey) throws InterruptedException {
-
-		boolean result = false;
+	public static boolean isElementDisplayed(String locatorKey) throws InterruptedException {
 		try {
-			Thread.sleep(1000);
-			result = driver.findElement(By.xpath(OR.getProperty(locatorKey))).isDisplayed();
+			WebElement element = wait
+					.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(OR.getProperty(locatorKey))));
+
+			log.info("Element '{" + locatorKey.split("_")[0] + "}' is displayed.");
+			ExtentListeners.test.info("Looking for an Element: '{" + locatorKey.split("_")[0] + "}'");
+			return element.isDisplayed();
 		} catch (NoSuchElementException e) {
 			System.out.println(locatorKey.split("_")[0] + " is not found!!");
+			return false;
 		}
-		log.info("Finding Element : " + locatorKey.split("_")[0]);
-		ExtentListeners.test.info("Looking for an Element : " + locatorKey.split("_")[0]);
-		return result;
 	}
 
 	// Method to check if element is already selected or not
-	public static boolean elementSelected(String locatorKey) {
-
-		boolean result = false;
+	public static boolean isElementSelected(String locatorKey) {
 		try {
-			result = driver.findElement(By.xpath(OR.getProperty(locatorKey))).isSelected();
+			WebElement element = driver.findElement(By.xpath(OR.getProperty(locatorKey)));
+			boolean result = element.isSelected();
+
+			log.info("Checking if Element '{" + locatorKey.split("_")[0] + "}' is already selected.");
+			ExtentListeners.test.info("Checking if Element '{" + locatorKey.split("_")[0] + "}' is already selected.");
+
+			return result;
 		} catch (Exception e) {
 			e.printStackTrace();
+			return false;
 		}
-		log.info("Checking if Element is already Selected : " + locatorKey.split("_")[0]);
-		ExtentListeners.test.info("Checking if Element is already Selected  : " + locatorKey.split("_")[0]);
-		return result;
 	}
 
 	// Method to generate a random number
@@ -189,13 +191,14 @@ public class CommonUtil extends BaseTest {
 		if (locatorKey != null) {
 			try {
 				if (locatorKey.endsWith("_XPATH")) {
-					WebElement element = driver.findElement(By.xpath(OR.getProperty(locatorKey)));
+
+					WebElement element = wait
+							.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty(locatorKey))));
 					js.executeScript("arguments[0].scrollIntoView();", element);
-					Thread.sleep(500);
+
 				}
 			} catch (NoSuchElementException e) {
-				locatorKey = locatorKey.split("_")[0];
-				System.out.println(locatorKey + " is not availble!!");
+				System.out.println(locatorKey.split("_")[0] + " is not availble!!");
 			}
 		} else {
 			js.executeScript("window.scrollBy(" + horizontal + "," + vertical + ")");
@@ -210,7 +213,6 @@ public class CommonUtil extends BaseTest {
 		List<WebElement> elementList = null;
 		if (locatorKey.endsWith("_XPATH")) {
 			try {
-				Thread.sleep(500);
 				elementList = driver.findElements(By.xpath(OR.getProperty(locatorKey)));
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -222,9 +224,8 @@ public class CommonUtil extends BaseTest {
 	}
 
 	// MouseHover Action
-	public static void mouseHover(String locatorKey) throws InterruptedException {
+	public static void mouseHover(String locatorKey) {
 		try {
-			Thread.sleep(2000);
 			WebElement element = driver.findElement(By.xpath(OR.getProperty(locatorKey)));
 			Actions actions = new Actions(driver);
 			actions.moveToElement(element).perform();
@@ -236,16 +237,15 @@ public class CommonUtil extends BaseTest {
 	// Get window handles and switch between them
 	public void switchWindow() {
 		try {
-			Set<String> windowHandles = driver.getWindowHandles();
-			// Switch to the pop-up window
-			for (String windowHandle : windowHandles) {
-				if (!windowHandle.equals(driver.getWindowHandle())) {
-					driver.switchTo().window(windowHandle);
-					break;
-				}
-			}
-		} catch (Exception e) {
-			System.out.println("Error in Switching between windows!!!");
-		}
+	        for (String windowHandle : driver.getWindowHandles()) {
+	            if (!windowHandle.equals(driver.getWindowHandle())) {
+	                driver.switchTo().window(windowHandle);
+	                break;
+	            }
+	        }
+	    } catch (Exception e) {
+	        System.out.println("Error in switching between windows!!!");
+	        e.printStackTrace();
+	    }
 	}
 }

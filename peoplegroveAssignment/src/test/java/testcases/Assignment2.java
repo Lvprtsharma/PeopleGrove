@@ -60,7 +60,7 @@ public class Assignment2 extends CommonUtil {
 			System.out.println("Clicked on Home Buttons!!");
 			
 			Thread.sleep(800);
-			jsclick("updateBtn_XPATH");			//Clicking on Update Button
+			click("updateBtn_XPATH");			//Clicking on Update Button
 			System.out.println("Clicked on Update Option!!");
 			
 			String currentWindow = driver.getWindowHandle();
@@ -71,16 +71,16 @@ public class Assignment2 extends CommonUtil {
 			CommonUtil.scroll("3rdOption_XPATH", 0, 0);	
 			System.out.println("Scrolled to check 3rd option!!");
 			
-			boolean isSelected = elementSelected("3rdOption_XPATH");
+			boolean isSelected = isElementDisplayed("3rdOption_XPATH");
 
 			//Checking if third option is already selected or not
 			if (isSelected) {						
 				System.out.println("The radio button is selected for third option!!");
-				jsclick("skipPopUp_XPATH");
+				click("skipPopUp_XPATH");
 				System.out.println("Skipping the Popup WIndow!!");
 			} else {
 				System.out.println("The radio button is not selected for third option!!");
-				jsclick("3rdOption_XPATH");
+				click("3rdOption_XPATH");
 				System.out.println("Choosing the third option!!");
 				
 				click("updatePopUp_XPATH");

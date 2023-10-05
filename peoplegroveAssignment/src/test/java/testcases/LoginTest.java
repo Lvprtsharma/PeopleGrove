@@ -29,7 +29,7 @@ public class LoginTest extends CommonUtil {
 			click("loginBtn_XPATH");
 			System.out.println("Clicked on Login Button");
 
-			if (elementDisplayed("homeBtn_XPATH")) {
+			if (isElementDisplayed("homeBtn_XPATH")) {
 				System.out.println("======================== Logged in Successfully ========================");
 			} else {
 				Assert.fail("Login Unsuccessfull!!");

@@ -40,7 +40,7 @@ public class SignUpTest extends CommonUtil {
 			click("agreePolicy_XPATH");
 			click("createAccount_XPATH");
 
-			if (elementDisplayed("accountExists_XPATH")) {
+			if (isElementDisplayed("accountExists_XPATH")) {
 				System.out.println("This account already exists");
 				type("email_XPATH", username + randomNum + 1 + "@peoplegrove.com");
 				System.out.println("Retyped Username : " + username + randomNum + 1 + "@peoplegrove.com");

@@ -34,7 +34,7 @@ public class Assignment1 extends CommonUtil {
 	@Test(priority = 2, dependsOnMethods = "HomePageCheck", groups = {"Assignment"})
 	public void AskQuestionCheck() throws InterruptedException {
 		try {
-			while (elementDisplayed("jobLoader_XPATH")) { // Check if loader is available then load all job links
+			while (isElementDisplayed("jobLoader_XPATH")) { // Check if loader is available then load all job links
 				scroll("jobLoader_XPATH", 0, 0);
 				System.out.println("Job Loader Found and Scrolled Down!!");
 			}
@@ -49,13 +49,13 @@ public class Assignment1 extends CommonUtil {
 				try {
 					joblinks.get(i).click();
 					System.out.println("Checking on : " + joblinks.get(i).getText());
-					if (elementDisplayed("jobProfileName_XPATH")) { // Checking if Profile name is available
+					if (isElementDisplayed("jobProfileName_XPATH")) { // Checking if Profile name is available
 						scroll("personCard_XPATH", 0, 0);
 					} else {
 						System.out.println("Recruiter Name is not available!!");
 						continue;
 					}
-					if (elementDisplayed("askQuestion_XPATH")) { // Checking if Ask Question option is available
+					if (isElementDisplayed("askQuestion_XPATH")) { // Checking if Ask Question option is available
 						System.out.println("Ask Question Option Available!!");
 						checkAskQuestions = false;
 						break;
@@ -92,7 +92,7 @@ public class Assignment1 extends CommonUtil {
 			type("typeSpace_XPATH", message2);
 			System.out.println("Typed message2 as : "+message2);
 			
-			jsclick("sendBtn_XPATH");
+			click("sendBtn_XPATH");
 			System.out.println("Clicked on Send Button!!");
 			
 			String messageFromUI = getText("messageSent_XPATH");
@@ -132,8 +132,8 @@ public class Assignment1 extends CommonUtil {
 			Assert.assertTrue(firstline.equals(message1), "first line matched");
 			Assert.assertTrue(secondline.equals(message2), "second line matched");
 
-			jsclick("viewProfile_XPATH");
-			jsclick("profileView_XPATH");
+			click("viewProfile_XPATH");
+			click("profileView_XPATH");
 			System.out.println("Clicked on Profile Name!!");
 
 		} catch (Exception e) {

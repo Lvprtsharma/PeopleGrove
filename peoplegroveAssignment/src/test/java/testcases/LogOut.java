@@ -20,7 +20,7 @@ public class LogOut extends CommonUtil {
 			System.out.println("SignOut Option Clicked!!");
 
 			// Check if the sign-up element is displayed 
-			if (elementDisplayed("signinBtn_XPATH")) {
+			if (isElementDisplayed("signinBtn_XPATH")) {
 				System.out.println("Logged Out Successfully!!!");
 			}
 		} catch (Exception e) {
