@@ -68,8 +68,7 @@
 				<configuration>
 					<testFailureIgnore> false </testFailureIgnore>
 					<suiteXmlFiles>
-						<suiteXmlFile>src\test\resources\runner\testng.xml</suiteXmlFile>
-
+						<suiteXmlFile>src\test\resources\runner\All_TestCases.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
