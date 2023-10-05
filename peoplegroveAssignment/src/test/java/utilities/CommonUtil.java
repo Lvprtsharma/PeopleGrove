@@ -3,7 +3,6 @@ package utilities;
 import java.time.Duration;
 import java.util.List;
 import java.util.Random;
-import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
@@ -29,13 +28,12 @@ public class CommonUtil extends BaseTest {
 	 * used in test scripts
 	 */
 
-	static Wait<WebDriver> wait = null; // Declare wait outside of try block
 	static int maxRetries = 5; // Set the maximum number of retries
 	static int retries = 0;
 
 	// Explicit Wait Method
 	public static Wait<WebDriver> explicitWait() {
-
+		Wait<WebDriver> wait = null; // Declare wait outside of try block
 		try {
 			wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(config.getProperty("explicit.wait"))));
 		} catch (Exception e) {
@@ -147,18 +145,24 @@ public class CommonUtil extends BaseTest {
 	}
 
 	// Element Display method to check if an element is visible or not
-	public static boolean isElementDisplayed(String locatorKey) throws InterruptedException {
-		try {
-			WebElement element = wait
-					.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(OR.getProperty(locatorKey))));
+	public static boolean isElementDisplayed(String locatorKey, int maxRetry) throws InterruptedException {
 
-			log.info("Element '{" + locatorKey.split("_")[0] + "}' is displayed.");
-			ExtentListeners.test.info("Looking for an Element: '{" + locatorKey.split("_")[0] + "}'");
-			return element.isDisplayed();
-		} catch (NoSuchElementException e) {
-			System.out.println(locatorKey.split("_")[0] + " is not found!!");
-			return false;
+		while (retries < maxRetry) {
+			try {
+				WebElement element = explicitWait()
+						.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(OR.getProperty(locatorKey))));
+
+				log.info("Element '{" + locatorKey.split("_")[0] + "}' is displayed.");
+				ExtentListeners.test.info("Looking for an Element: '{" + locatorKey.split("_")[0] + "}'");
+
+				return element.isDisplayed();
+			} catch (Throwable e) {
+				System.out.println(locatorKey.split("_")[0] + " is not found!! Retry: " + (retries + 1));
+				retries++;
+			}
 		}
+		return false;
+
 	}
 
 	// Method to check if element is already selected or not
@@ -192,7 +196,7 @@ public class CommonUtil extends BaseTest {
 			try {
 				if (locatorKey.endsWith("_XPATH")) {
 
-					WebElement element = wait
+					WebElement element = explicitWait()
 							.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty(locatorKey))));
 					js.executeScript("arguments[0].scrollIntoView();", element);
 
@@ -225,27 +229,32 @@ public class CommonUtil extends BaseTest {
 
 	// MouseHover Action
 	public static void mouseHover(String locatorKey) {
-		try {
-			WebElement element = driver.findElement(By.xpath(OR.getProperty(locatorKey)));
-			Actions actions = new Actions(driver);
-			actions.moveToElement(element).perform();
-		} catch (NoSuchElementException e) {
-			e.printStackTrace();
+		
+		while(retries < maxRetries) {
+			try {
+				WebElement element = explicitWait()
+						.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty(locatorKey))));
+				Actions actions = new Actions(driver);
+				actions.moveToElement(element).perform();
+			} catch (NoSuchElementException e) {
+				System.out.println("Looking for Element : " + locatorKey.split("_")[0]);
+				retries++;
+			}
 		}
 	}
 
 	// Get window handles and switch between them
 	public void switchWindow() {
 		try {
-	        for (String windowHandle : driver.getWindowHandles()) {
-	            if (!windowHandle.equals(driver.getWindowHandle())) {
-	                driver.switchTo().window(windowHandle);
-	                break;
-	            }
-	        }
-	    } catch (Exception e) {
-	        System.out.println("Error in switching between windows!!!");
-	        e.printStackTrace();
-	    }
+			for (String windowHandle : driver.getWindowHandles()) {
+				if (!windowHandle.equals(driver.getWindowHandle())) {
+					driver.switchTo().window(windowHandle);
+					break;
+				}
+			}
+		} catch (Exception e) {
+			System.out.println("Error in switching between windows!!!");
+			e.printStackTrace();
+		}
 	}
 }

@@ -71,7 +71,7 @@ public class Assignment2 extends CommonUtil {
 			CommonUtil.scroll("3rdOption_XPATH", 0, 0);	
 			System.out.println("Scrolled to check 3rd option!!");
 			
-			boolean isSelected = isElementDisplayed("3rdOption_XPATH");
+			boolean isSelected = isElementDisplayed("3rdOption_XPATH", 1);
 
 			//Checking if third option is already selected or not
 			if (isSelected) {						
@@ -143,7 +143,6 @@ public class Assignment2 extends CommonUtil {
 	//Method to select the career links
 	public void careerPathSelect(int i) throws InterruptedException {
 
-		driver.navigate().refresh();
 		CommonUtil.scroll("inspiration_XPATH", 0, 0);
 		Thread.sleep(1000);					//Script is running very fast, these sleeps are just to slow down for clear observation
 		
@@ -152,7 +151,7 @@ public class Assignment2 extends CommonUtil {
 		Thread.sleep(1000); 				//Script is running very fast, these sleeps are just to slow down for clear observation
 		
 		clickedElementTexts.add(getText("selectedCareer_XPATH"));
-		System.out.println(clickedElementTexts+" is Selected!!");
+		System.out.println(clickedElementTexts.get(i)+" is Selected!!");
 		driver.navigate().back();
 	}
 }

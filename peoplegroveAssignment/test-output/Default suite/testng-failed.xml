@@ -6,6 +6,7 @@
       <class name="testcases.SignUpTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
           <include name="motivates_Selection"/>
           <include name="signUpDetails"/>
         </methods>

@@ -34,7 +34,7 @@ public class Assignment1 extends CommonUtil {
 	@Test(priority = 2, dependsOnMethods = "HomePageCheck", groups = {"Assignment"})
 	public void AskQuestionCheck() throws InterruptedException {
 		try {
-			while (isElementDisplayed("jobLoader_XPATH")) { // Check if loader is available then load all job links
+			while (isElementDisplayed("jobLoader_XPATH", 2)) { // Check if loader is available then load all job links
 				scroll("jobLoader_XPATH", 0, 0);
 				System.out.println("Job Loader Found and Scrolled Down!!");
 			}
@@ -49,13 +49,13 @@ public class Assignment1 extends CommonUtil {
 				try {
 					joblinks.get(i).click();
 					System.out.println("Checking on : " + joblinks.get(i).getText());
-					if (isElementDisplayed("jobProfileName_XPATH")) { // Checking if Profile name is available
+					if (isElementDisplayed("jobProfileName_XPATH", 1)) { // Checking if Profile name is available
 						scroll("personCard_XPATH", 0, 0);
 					} else {
 						System.out.println("Recruiter Name is not available!!");
 						continue;
 					}
-					if (isElementDisplayed("askQuestion_XPATH")) { // Checking if Ask Question option is available
+					if (isElementDisplayed("askQuestion_XPATH", 1)) { // Checking if Ask Question option is available
 						System.out.println("Ask Question Option Available!!");
 						checkAskQuestions = false;
 						break;

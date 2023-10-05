@@ -40,10 +40,13 @@ public class SignUpTest extends CommonUtil {
 			click("agreePolicy_XPATH");
 			click("createAccount_XPATH");
 
-			if (isElementDisplayed("accountExists_XPATH")) {
+			if (isElementDisplayed("accountExists_XPATH",1)) {
+
 				System.out.println("This account already exists");
 				type("email_XPATH", username + randomNum + 1 + "@peoplegrove.com");
+
 				System.out.println("Retyped Username : " + username + randomNum + 1 + "@peoplegrove.com");
+				click("createAccount_XPATH");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -54,7 +57,10 @@ public class SignUpTest extends CommonUtil {
 	public void joiningAs_Selction() {
 		try {
 			click("students_XPATH");
+			System.out.println("Selected : " + getText("students_XPATH"));
+
 			click("nextBtn_XPATH");
+			System.out.println("Clicked Next");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -64,9 +70,17 @@ public class SignUpTest extends CommonUtil {
 	public void enjoyDoing_Selection() {
 		try {
 			click("creatingContent_XPATH");
+			System.out.println("Selected : " + getText("creatingContent_XPATH"));
+
 			click("learningLanguage_XPATH");
+			System.out.println("Selected : " + getText("learningLanguage_XPATH"));
+
 			click("music_XPATH");
+			System.out.println("Selected : " + getText("music_XPATH"));
+
 			click("nextBtn_XPATH");
+			System.out.println("Clicked Next");
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -76,9 +90,16 @@ public class SignUpTest extends CommonUtil {
 	public void motivates_Selection() throws InterruptedException {
 		try {
 			click("beingChallenged_XPATH");
+			System.out.println("Selected : " + getText("beingChallenged_XPATH"));
+
 			click("beingCreative_XPATH");
+			System.out.println("Selected : " + getText("beingCreative_XPATH"));
+
 			click("learningthings_XPATH");
+			System.out.println("Selected : " + getText("learningthings_XPATH"));
+
 			click("nextBtn_XPATH");
+			System.out.println("Clicked Next");
 		} catch (StaleElementReferenceException e) {
 			e.printStackTrace();
 		}
@@ -88,6 +109,7 @@ public class SignUpTest extends CommonUtil {
 	public void photo_Selection() {
 		try {
 			click("laterPlease_XPATH");
+			System.out.println("Selected : " + getText("laterPlease_XPATH"));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -97,7 +119,10 @@ public class SignUpTest extends CommonUtil {
 	public void career_Selection() {
 		try {
 			click("option1_XPATH");
+			System.out.println("Selected : " + getText("option1_XPATH"));
+
 			click("finish_XPATH");
+			System.out.println("Clicked Finish");
 			System.out.println("======================== Signup Finished ========================");
 		} catch (Exception e) {
 			e.printStackTrace();

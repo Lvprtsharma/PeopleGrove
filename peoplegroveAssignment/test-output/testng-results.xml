@@ -1,39 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="10" passed="8" failed="0" skipped="0">
+<testng-results ignored="6" total="20" passed="14" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-05T13:00:51 IST" name="Suite" finished-at="2023-10-05T13:01:28 IST" duration-ms="36149">
+  <suite started-at="2023-10-05T18:28:50 IST" name="Suite" finished-at="2023-10-05T18:30:48 IST" duration-ms="117519">
     <groups>
+      <group name="Assignment">
+        <method signature="Assignment2.CareerPageCheck()[pri:1, instance:testcases.Assignment2@4748a0f9]" name="CareerPageCheck" class="testcases.Assignment2"/>
+        <method signature="Assignment2.InspirationPathCheck()[pri:2, instance:testcases.Assignment2@4748a0f9]" name="InspirationPathCheck" class="testcases.Assignment2"/>
+        <method signature="Assignment2.RecentlyViewCheck()[pri:4, instance:testcases.Assignment2@4748a0f9]" name="RecentlyViewCheck" class="testcases.Assignment2"/>
+        <method signature="Assignment2.UpdateCheck()[pri:3, instance:testcases.Assignment2@4748a0f9]" name="UpdateCheck" class="testcases.Assignment2"/>
+      </group> <!-- Assignment -->
       <group name="Signup">
-        <method signature="SignUpTest.career_Selection()[pri:7, instance:testcases.SignUpTest@19835e64]" name="career_Selection" class="testcases.SignUpTest"/>
-        <method signature="SignUpTest.enjoyDoing_Selection()[pri:4, instance:testcases.SignUpTest@19835e64]" name="enjoyDoing_Selection" class="testcases.SignUpTest"/>
-        <method signature="SignUpTest.joiningAs_Selction()[pri:3, instance:testcases.SignUpTest@19835e64]" name="joiningAs_Selction" class="testcases.SignUpTest"/>
-        <method signature="SignUpTest.motivates_Selection()[pri:5, instance:testcases.SignUpTest@19835e64]" name="motivates_Selection" class="testcases.SignUpTest"/>
-        <method signature="SignUpTest.photo_Selection()[pri:6, instance:testcases.SignUpTest@19835e64]" name="photo_Selection" class="testcases.SignUpTest"/>
-        <method signature="SignUpTest.signUpDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testcases.SignUpTest@19835e64]" name="signUpDetails" class="testcases.SignUpTest"/>
-        <method signature="SignUpTest.signUp_Selction()[pri:1, instance:testcases.SignUpTest@19835e64]" name="signUp_Selction" class="testcases.SignUpTest"/>
+        <method signature="SignUpTest.career_Selection()[pri:7, instance:testcases.SignUpTest@30af5b6b]" name="career_Selection" class="testcases.SignUpTest"/>
+        <method signature="SignUpTest.enjoyDoing_Selection()[pri:4, instance:testcases.SignUpTest@30af5b6b]" name="enjoyDoing_Selection" class="testcases.SignUpTest"/>
+        <method signature="SignUpTest.joiningAs_Selction()[pri:3, instance:testcases.SignUpTest@30af5b6b]" name="joiningAs_Selction" class="testcases.SignUpTest"/>
+        <method signature="SignUpTest.motivates_Selection()[pri:5, instance:testcases.SignUpTest@30af5b6b]" name="motivates_Selection" class="testcases.SignUpTest"/>
+        <method signature="SignUpTest.photo_Selection()[pri:6, instance:testcases.SignUpTest@30af5b6b]" name="photo_Selection" class="testcases.SignUpTest"/>
+        <method signature="SignUpTest.signUpDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testcases.SignUpTest@30af5b6b]" name="signUpDetails" class="testcases.SignUpTest"/>
+        <method signature="SignUpTest.signUp_Selction()[pri:1, instance:testcases.SignUpTest@30af5b6b]" name="signUp_Selction" class="testcases.SignUpTest"/>
       </group> <!-- Signup -->
       <group name="Logout">
-        <method signature="LogOut.LogOutCheck()[pri:0, instance:testcases.LogOut@7d1cfb8b]" name="LogOutCheck" class="testcases.LogOut"/>
+        <method signature="LogOut.LogOutCheck()[pri:0, instance:testcases.LogOut@63787180]" name="LogOutCheck" class="testcases.LogOut"/>
+        <method signature="LogOut.LogOutCheck()[pri:0, instance:testcases.LogOut@4b14918a]" name="LogOutCheck" class="testcases.LogOut"/>
       </group> <!-- Logout -->
+      <group name="Login">
+        <method signature="LoginTest.Login(java.lang.String,java.lang.String)[pri:1, instance:testcases.LoginTest@53dbe163]" name="Login" class="testcases.LoginTest"/>
+      </group> <!-- Login -->
     </groups>
-    <test started-at="2023-10-05T13:00:51 IST" name="Signup PeopleGrove" finished-at="2023-10-05T13:01:28 IST" duration-ms="36149">
+    <test started-at="2023-10-05T18:28:50 IST" name="Signup PeopleGrove" finished-at="2023-10-05T18:29:59 IST" duration-ms="68453">
       <class name="testcases.LogOut">
-        <test-method signature="LogOutCheck()[pri:0, instance:testcases.LogOut@7d1cfb8b]" started-at="2023-10-05T13:01:20 IST" name="LogOutCheck" depends-on-groups="Signup" finished-at="2023-10-05T13:01:28 IST" duration-ms="7920" status="PASS">
+        <test-method signature="LogOutCheck()[pri:0, instance:testcases.LogOut@63787180]" started-at="2023-10-05T18:29:13 IST" name="LogOutCheck" depends-on-groups="Signup" finished-at="2023-10-05T18:29:59 IST" duration-ms="46003" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogOutCheck -->
       </class> <!-- testcases.LogOut -->
       <class name="testcases.SignUpTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.SignUpTest@19835e64]" started-at="2023-10-05T13:00:37 IST" name="setup" finished-at="2023-10-05T13:00:51 IST" duration-ms="14660" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="signUp_Selction()[pri:1, instance:testcases.SignUpTest@19835e64]" started-at="2023-10-05T13:00:51 IST" name="signUp_Selction" finished-at="2023-10-05T13:00:56 IST" duration-ms="4221" status="PASS">
+        <test-method signature="signUp_Selction()[pri:1, instance:testcases.SignUpTest@30af5b6b]" started-at="2023-10-05T18:28:50 IST" name="signUp_Selction" finished-at="2023-10-05T18:28:51 IST" duration-ms="402" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUp_Selction -->
-        <test-method signature="signUpDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testcases.SignUpTest@19835e64]" started-at="2023-10-05T13:00:56 IST" name="signUpDetails" finished-at="2023-10-05T13:01:08 IST" duration-ms="12391" status="PASS">
+        <test-method signature="signUpDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testcases.SignUpTest@30af5b6b]" started-at="2023-10-05T18:28:51 IST" name="signUpDetails" finished-at="2023-10-05T18:29:02 IST" duration-ms="11013" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -59,31 +65,79 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpDetails -->
-        <test-method signature="joiningAs_Selction()[pri:3, instance:testcases.SignUpTest@19835e64]" started-at="2023-10-05T13:01:08 IST" name="joiningAs_Selction" finished-at="2023-10-05T13:01:09 IST" duration-ms="1282" status="PASS">
+        <test-method signature="joiningAs_Selction()[pri:3, instance:testcases.SignUpTest@30af5b6b]" started-at="2023-10-05T18:29:02 IST" name="joiningAs_Selction" finished-at="2023-10-05T18:29:03 IST" duration-ms="1239" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- joiningAs_Selction -->
-        <test-method signature="enjoyDoing_Selection()[pri:4, instance:testcases.SignUpTest@19835e64]" started-at="2023-10-05T13:01:09 IST" name="enjoyDoing_Selection" finished-at="2023-10-05T13:01:12 IST" duration-ms="3052" status="PASS">
+        <test-method signature="enjoyDoing_Selection()[pri:4, instance:testcases.SignUpTest@30af5b6b]" started-at="2023-10-05T18:29:03 IST" name="enjoyDoing_Selection" finished-at="2023-10-05T18:29:06 IST" duration-ms="3048" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enjoyDoing_Selection -->
-        <test-method signature="motivates_Selection()[pri:5, instance:testcases.SignUpTest@19835e64]" started-at="2023-10-05T13:01:12 IST" name="motivates_Selection" finished-at="2023-10-05T13:01:15 IST" duration-ms="2371" status="PASS">
+        <test-method signature="motivates_Selection()[pri:5, instance:testcases.SignUpTest@30af5b6b]" started-at="2023-10-05T18:29:06 IST" name="motivates_Selection" finished-at="2023-10-05T18:29:08 IST" duration-ms="2397" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- motivates_Selection -->
-        <test-method signature="photo_Selection()[pri:6, instance:testcases.SignUpTest@19835e64]" started-at="2023-10-05T13:01:15 IST" name="photo_Selection" finished-at="2023-10-05T13:01:17 IST" duration-ms="2601" status="PASS">
+        <test-method signature="photo_Selection()[pri:6, instance:testcases.SignUpTest@30af5b6b]" started-at="2023-10-05T18:29:08 IST" name="photo_Selection" finished-at="2023-10-05T18:29:11 IST" duration-ms="2227" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- photo_Selection -->
-        <test-method signature="career_Selection()[pri:7, instance:testcases.SignUpTest@19835e64]" started-at="2023-10-05T13:01:17 IST" name="career_Selection" finished-at="2023-10-05T13:01:20 IST" duration-ms="2217" status="PASS">
+        <test-method signature="career_Selection()[pri:7, instance:testcases.SignUpTest@30af5b6b]" started-at="2023-10-05T18:29:11 IST" name="career_Selection" finished-at="2023-10-05T18:29:13 IST" duration-ms="2052" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- career_Selection -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SignUpTest@19835e64]" started-at="2023-10-05T13:01:28 IST" name="tearDown" finished-at="2023-10-05T13:01:28 IST" duration-ms="250" status="PASS">
+      </class> <!-- testcases.SignUpTest -->
+    </test> <!-- Signup PeopleGrove -->
+    <test started-at="2023-10-05T18:29:59 IST" name="Assignment 2" finished-at="2023-10-05T18:30:48 IST" duration-ms="48754">
+      <class name="testcases.LogOut">
+        <test-method signature="LogOutCheck()[pri:0, instance:testcases.LogOut@4b14918a]" started-at="2023-10-05T18:30:22 IST" name="LogOutCheck" depends-on-groups="Assignment" finished-at="2023-10-05T18:30:48 IST" duration-ms="25770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogOutCheck -->
+      </class> <!-- testcases.LogOut -->
+      <class name="testcases.Assignment2">
+        <test-method signature="CareerPageCheck()[pri:1, instance:testcases.Assignment2@4748a0f9]" started-at="2023-10-05T18:30:05 IST" name="CareerPageCheck" depends-on-groups="Login, Login" finished-at="2023-10-05T18:30:05 IST" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CareerPageCheck -->
+        <test-method signature="InspirationPathCheck()[pri:2, instance:testcases.Assignment2@4748a0f9]" started-at="2023-10-05T18:30:05 IST" name="InspirationPathCheck" depends-on-groups="Login" finished-at="2023-10-05T18:30:15 IST" depends-on-methods="testcases.Assignment2.CareerPageCheck" duration-ms="9956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InspirationPathCheck -->
+        <test-method signature="UpdateCheck()[pri:3, instance:testcases.Assignment2@4748a0f9]" started-at="2023-10-05T18:30:15 IST" name="UpdateCheck" depends-on-groups="Login" finished-at="2023-10-05T18:30:17 IST" depends-on-methods="testcases.Assignment2.CareerPageCheck" duration-ms="2295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateCheck -->
+        <test-method signature="RecentlyViewCheck()[pri:4, instance:testcases.Assignment2@4748a0f9]" started-at="2023-10-05T18:30:17 IST" name="RecentlyViewCheck" depends-on-groups="Login" finished-at="2023-10-05T18:30:22 IST" depends-on-methods="testcases.Assignment2.InspirationPathCheck, testcases.Assignment2.CareerPageCheck" duration-ms="4820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RecentlyViewCheck -->
+      </class> <!-- testcases.Assignment2 -->
+      <class name="testcases.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@53dbe163]" started-at="2023-10-05T18:28:40 IST" name="setup" finished-at="2023-10-05T18:28:50 IST" duration-ms="10502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:1, instance:testcases.LoginTest@53dbe163]" started-at="2023-10-05T18:29:59 IST" name="Login" finished-at="2023-10-05T18:30:05 IST" duration-ms="5795" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dummytest]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Automation@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@53dbe163]" started-at="2023-10-05T18:30:48 IST" name="tearDown" finished-at="2023-10-05T18:30:48 IST" duration-ms="248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testcases.SignUpTest -->
-    </test> <!-- Signup PeopleGrove -->
+      </class> <!-- testcases.LoginTest -->
+    </test> <!-- Assignment 2 -->
   </suite> <!-- Suite -->
 </testng-results>

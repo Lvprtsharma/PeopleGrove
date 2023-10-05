@@ -1,51 +1,18 @@
-INFO    2023-10-05 14:20:12,546 [main] base.BaseTest  - OR Properties file loaded!!!
-INFO    2023-10-05 14:20:12,548 [main] base.BaseTest  - Config Properties file loaded!!!
-INFO    2023-10-05 14:20:16,419 [main] base.BaseTest  - Chrome Browser Launched!!!
-INFO    2023-10-05 14:20:19,443 [main] base.BaseTest  - Navigated to : https://basecopy5.staging.pg-test.com/
-INFO    2023-10-05 14:20:21,806 [main] base.BaseTest  - Typing in an Element firstName and entered the value as Tester
-INFO    2023-10-05 14:20:22,119 [main] base.BaseTest  - Typing in an Element lastName and entered the value as Test
-INFO    2023-10-05 14:20:22,412 [main] base.BaseTest  - Typing in an Element email and entered the value as dummytest538@peoplegrove.com
-INFO    2023-10-05 14:20:22,691 [main] base.BaseTest  - Typing in an Element password and entered the value as Automation@123
-INFO    2023-10-05 14:20:34,069 [main] base.BaseTest  - Finding Element : accountExists
-INFO    2023-10-05 14:20:53,828 [main] base.BaseTest  - Finding Element : signinBtn
-INFO    2023-10-05 14:20:54,628 [main] base.BaseTest  - Typing in an Element email and entered the value as dummytest538@peoplegrove.com
-INFO    2023-10-05 14:20:54,714 [main] base.BaseTest  - Typing in an Element password and entered the value as Automation@123
-INFO    2023-10-05 14:20:59,674 [main] base.BaseTest  - Finding Element : homeBtn
-INFO    2023-10-05 14:21:03,069 [main] base.BaseTest  - Checking the count of Element : jobLinks
-INFO    2023-10-05 14:21:04,417 [main] base.BaseTest  - Finding Element : jobProfileName
-INFO    2023-10-05 14:21:04,980 [main] base.BaseTest  - Scrolling to the Element : personCard
-INFO    2023-10-05 14:21:06,044 [main] base.BaseTest  - Finding Element : askQuestion
-INFO    2023-10-05 14:21:06,766 [main] base.BaseTest  - Typing in an Element typeSpace and entered the value as Testing Assignment 1
-INFO    2023-10-05 14:21:07,471 [main] base.BaseTest  - Clicking Enter on an Element : typeSpace
-INFO    2023-10-05 14:21:07,699 [main] base.BaseTest  - Typing in an Element typeSpace and entered the value as Total experience 4 years
-INFO    2023-10-05 14:21:08,301 [main] base.BaseTest  - Clicking on an Element : sendBtn
-INFO    2023-10-05 14:21:09,150 [main] base.BaseTest  - Text Read from an Element messageSent and Captured the value as You'll get an email when Bill responds.
-INFO    2023-10-05 14:21:09,189 [main] base.BaseTest  - Text Read from an Element jobProfileName and Captured the value as Bill OKon
-INFO    2023-10-05 14:21:09,746 [main] base.BaseTest  - Scrolling to the Element : keepConvoGoing
-INFO    2023-10-05 14:21:14,794 [main] base.BaseTest  - Text Read from an Element infoTitle and Captured the value as You reached out to Bill for help with a job!
-INFO    2023-10-05 14:21:14,860 [main] base.BaseTest  - Text Read from an Element firstLine and Captured the value as Testing Assignment 1
-INFO    2023-10-05 14:21:14,898 [main] base.BaseTest  - Text Read from an Element secondLine and Captured the value as Total experience 4 years
-INFO    2023-10-05 14:21:15,506 [main] base.BaseTest  - Clicking on an Element : viewProfile
-INFO    2023-10-05 14:21:16,461 [main] base.BaseTest  - Clicking on an Element : profileView
-INFO    2023-10-05 14:21:19,724 [main] base.BaseTest  - Scrolling to the Element : otherSimilars
-INFO    2023-10-05 14:21:20,258 [main] base.BaseTest  - Checking the count of Element : similarNames
-INFO    2023-10-05 14:21:25,852 [main] base.BaseTest  - Finding Element : signinBtn
-INFO    2023-10-05 14:21:26,190 [main] base.BaseTest  - Typing in an Element email and entered the value as dummytest538@peoplegrove.com
-INFO    2023-10-05 14:21:26,367 [main] base.BaseTest  - Typing in an Element password and entered the value as Automation@123
-INFO    2023-10-05 14:21:31,072 [main] base.BaseTest  - Finding Element : homeBtn
-INFO    2023-10-05 14:21:36,940 [main] base.BaseTest  - Scrolling to the Element : inspiration
-INFO    2023-10-05 14:21:38,495 [main] base.BaseTest  - Checking the count of Element : inspirationOptions
-INFO    2023-10-05 14:21:39,742 [main] base.BaseTest  - Text Read from an Element selectedCareer and Captured the value as Test Engineer in SDET
-INFO    2023-10-05 14:21:44,164 [main] base.BaseTest  - Scrolling to the Element : inspiration
-INFO    2023-10-05 14:21:45,692 [main] base.BaseTest  - Checking the count of Element : inspirationOptions
-INFO    2023-10-05 14:21:46,828 [main] base.BaseTest  - Text Read from an Element selectedCareer and Captured the value as Vaccine Specialists
-INFO    2023-10-05 14:21:52,290 [main] base.BaseTest  - Scrolling to the Element : inspiration
-INFO    2023-10-05 14:21:53,836 [main] base.BaseTest  - Checking the count of Element : inspirationOptions
-INFO    2023-10-05 14:21:54,964 [main] base.BaseTest  - Text Read from an Element selectedCareer and Captured the value as Back End Developers
-INFO    2023-10-05 14:21:56,811 [main] base.BaseTest  - Clicking on an Element : updateBtn
-INFO    2023-10-05 14:21:57,394 [main] base.BaseTest  - Scrolling to the Element : 3rdOption
-INFO    2023-10-05 14:21:57,444 [main] base.BaseTest  - Checking if Element is already Selected : 3rdOption
-INFO    2023-10-05 14:21:58,007 [main] base.BaseTest  - Clicking on an Element : 3rdOption
-INFO    2023-10-05 14:22:03,428 [main] base.BaseTest  - Scrolling to the Element : recentlyViewedLink
-INFO    2023-10-05 14:22:09,047 [main] base.BaseTest  - Finding Element : signinBtn
-INFO    2023-10-05 14:22:09,471 [main] base.BaseTest  - Test Execution Completed!!
+INFO    2023-10-05 20:20:08,396 [main] base.BaseTest  - OR Properties file loaded!!!
+INFO    2023-10-05 20:20:08,397 [main] base.BaseTest  - Config Properties file loaded!!!
+INFO    2023-10-05 20:20:10,579 [main] base.BaseTest  - Chrome Browser Launched!!!
+INFO    2023-10-05 20:20:13,867 [main] base.BaseTest  - Navigated to : https://basecopy5.staging.pg-test.com/
+INFO    2023-10-05 20:20:16,711 [main] base.BaseTest  - Typing in an Element firstName and entered the value as Tester
+INFO    2023-10-05 20:20:16,808 [main] base.BaseTest  - Typing in an Element lastName and entered the value as Test
+INFO    2023-10-05 20:20:17,053 [main] base.BaseTest  - Typing in an Element email and entered the value as dummytest451@peoplegrove.com
+INFO    2023-10-05 20:20:17,197 [main] base.BaseTest  - Typing in an Element password and entered the value as Automation@123
+INFO    2023-10-05 20:20:27,508 [main] base.BaseTest  - Text Read from an Element students and Captured the value as Undergraduate Student
+INFO    2023-10-05 20:20:30,138 [main] base.BaseTest  - Text Read from an Element creatingContent and Captured the value as Creating content
+INFO    2023-10-05 20:20:30,203 [main] base.BaseTest  - Text Read from an Element learningLanguage and Captured the value as Learning new languages
+INFO    2023-10-05 20:20:30,292 [main] base.BaseTest  - Text Read from an Element music and Captured the value as Music
+INFO    2023-10-05 20:20:33,165 [main] base.BaseTest  - Text Read from an Element beingChallenged and Captured the value as Being challenged
+INFO    2023-10-05 20:20:33,222 [main] base.BaseTest  - Text Read from an Element beingCreative and Captured the value as Being creative
+INFO    2023-10-05 20:20:33,277 [main] base.BaseTest  - Text Read from an Element learningthings and Captured the value as Learning new things
+INFO    2023-10-05 20:20:36,777 [main] base.BaseTest  - Text Read from an Element laterPlease and Captured the value as Later, Please!
+INFO    2023-10-05 20:20:38,344 [main] base.BaseTest  - Text Read from an Element option1 and Captured the value as Find the best career path for me
+INFO    2023-10-05 20:21:51,084 [main] base.BaseTest  - Test Execution Completed!!

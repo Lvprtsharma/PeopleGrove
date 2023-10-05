@@ -6,22 +6,8 @@
   </listeners>
   <test thread-count="5" name="Assignment 2(failed)">
     <parameter name="password" value="Automation@123"/>
-    <parameter name="username" value="dummytest@peoplegrove.com"/>
+    <parameter name="username" value="dummytest"/>
     <classes>
-      <class name="testcases.LoginTest">
-        <methods>
-          <include name="setup"/>
-          <include name="Login" invocation-numbers="0"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- testcases.LoginTest -->
-      <class name="testcases.LogOut">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="LogOutCheck"/>
-        </methods>
-      </class> <!-- testcases.LogOut -->
       <class name="testcases.Assignment2">
         <methods>
           <include name="setup"/>
@@ -32,6 +18,20 @@
           <include name="CareerPageCheck"/>
         </methods>
       </class> <!-- testcases.Assignment2 -->
+      <class name="testcases.LogOut">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="LogOutCheck"/>
+        </methods>
+      </class> <!-- testcases.LogOut -->
+      <class name="testcases.LoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="Login" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcases.LoginTest -->
     </classes>
   </test> <!-- Assignment 2(failed) -->
 </suite> <!-- Failed suite [Suite] -->
