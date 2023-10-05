@@ -1,17 +1,332 @@
-INFO    2023-10-05 21:50:54,246 [main] base.BaseTest  - OR Properties file loaded!!!
-INFO    2023-10-05 21:50:54,255 [main] base.BaseTest  - Config Properties file loaded!!!
-INFO    2023-10-05 21:50:58,204 [main] base.BaseTest  - Chrome Browser Launched!!!
-INFO    2023-10-05 21:51:00,447 [main] base.BaseTest  - Navigated to : https://basecopy5.staging.pg-test.com/
-INFO    2023-10-05 21:51:02,874 [main] base.BaseTest  - Typing in an Element firstName and entered the value as Tester
-INFO    2023-10-05 21:51:03,006 [main] base.BaseTest  - Typing in an Element lastName and entered the value as Test
-INFO    2023-10-05 21:51:03,282 [main] base.BaseTest  - Typing in an Element email and entered the value as dummytest806@peoplegrove.com
-INFO    2023-10-05 21:51:03,443 [main] base.BaseTest  - Typing in an Element password and entered the value as Automation@123
-INFO    2023-10-05 21:51:13,796 [main] base.BaseTest  - Text Read from an Element students and Captured the value as Undergraduate Student
-INFO    2023-10-05 21:51:16,638 [main] base.BaseTest  - Text Read from an Element creatingContent and Captured the value as Creating content
-INFO    2023-10-05 21:51:16,782 [main] base.BaseTest  - Text Read from an Element learningLanguage and Captured the value as Learning new languages
-INFO    2023-10-05 21:51:16,912 [main] base.BaseTest  - Text Read from an Element music and Captured the value as Music
-INFO    2023-10-05 21:51:19,683 [main] base.BaseTest  - Text Read from an Element beingChallenged and Captured the value as Being challenged
-INFO    2023-10-05 21:51:19,813 [main] base.BaseTest  - Text Read from an Element beingCreative and Captured the value as Being creative
-INFO    2023-10-05 21:51:19,969 [main] base.BaseTest  - Text Read from an Element learningthings and Captured the value as Learning new things
-INFO    2023-10-05 21:51:24,219 [main] base.BaseTest  - Text Read from an Element laterPlease and Captured the value as Later, Please!
-INFO    2023-10-05 21:51:25,700 [main] base.BaseTest  - Text Read from an Element option1 and Captured the value as Find the best career path for me
+INFO    2023-10-05 22:00:09,782 [main] base.BaseTest  - OR Properties file loaded!!!
+INFO    2023-10-05 22:00:09,783 [main] base.BaseTest  - Config Properties file loaded!!!
+INFO    2023-10-05 22:00:12,024 [main] base.BaseTest  - Chrome Browser Launched!!!
+INFO    2023-10-05 22:00:14,027 [main] base.BaseTest  - Navigated to : https://basecopy5.staging.pg-test.com/
+INFO    2023-10-05 22:00:16,202 [main] base.BaseTest  - Typing in an Element firstName and entered the value as Tester
+INFO    2023-10-05 22:00:16,282 [main] base.BaseTest  - Typing in an Element lastName and entered the value as Test
+INFO    2023-10-05 22:00:16,423 [main] base.BaseTest  - Typing in an Element email and entered the value as dummytest166@peoplegrove.com
+INFO    2023-10-05 22:00:16,558 [main] base.BaseTest  - Typing in an Element password and entered the value as Automation@123
+INFO    2023-10-05 22:00:26,869 [main] base.BaseTest  - Text Read from an Element students and Captured the value as Undergraduate Student
+INFO    2023-10-05 22:00:29,568 [main] base.BaseTest  - Text Read from an Element creatingContent and Captured the value as Creating content
+INFO    2023-10-05 22:00:29,630 [main] base.BaseTest  - Text Read from an Element learningLanguage and Captured the value as Learning new languages
+INFO    2023-10-05 22:00:29,719 [main] base.BaseTest  - Text Read from an Element music and Captured the value as Music
+INFO    2023-10-05 22:00:32,080 [main] base.BaseTest  - Text Read from an Element beingChallenged and Captured the value as Being challenged
+INFO    2023-10-05 22:00:32,189 [main] base.BaseTest  - Text Read from an Element beingCreative and Captured the value as Being creative
+INFO    2023-10-05 22:00:32,256 [main] base.BaseTest  - Text Read from an Element learningthings and Captured the value as Learning new things
+INFO    2023-10-05 22:00:35,848 [main] base.BaseTest  - Text Read from an Element laterPlease and Captured the value as Later, Please!
+INFO    2023-10-05 22:00:37,337 [main] base.BaseTest  - Text Read from an Element option1 and Captured the value as Find the best career path for me
+INFO    2023-10-05 22:00:48,044 [main] base.BaseTest  - Element '{signinBtn}' is displayed.
+INFO    2023-10-05 22:00:48,968 [main] base.BaseTest  - Typing in an Element email and entered the value as dummytest166@peoplegrove.com
+INFO    2023-10-05 22:00:49,049 [main] base.BaseTest  - Typing in an Element password and entered the value as Automation@123
+INFO    2023-10-05 22:00:54,050 [main] base.BaseTest  - Element '{homeBtn}' is displayed.
+INFO    2023-10-05 22:00:54,192 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:54,233 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:54,255 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:54,317 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:54,330 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:54,360 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:54,376 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:54,415 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:54,432 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:54,468 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:54,485 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:54,518 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:54,532 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:54,568 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:54,580 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:54,608 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:54,626 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:54,657 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:54,672 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:54,704 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:54,723 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:54,757 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:54,771 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:54,815 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:54,834 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:54,866 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:54,887 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:54,921 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:54,935 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:54,966 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:54,981 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:55,021 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:55,041 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:55,076 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:55,089 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:55,116 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:55,131 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:55,166 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:55,180 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:55,209 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:55,223 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:55,258 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:55,276 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:55,315 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:55,332 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:55,363 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:55,379 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:55,407 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:55,420 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:55,450 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:55,463 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:55,491 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:55,511 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:55,540 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:55,560 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:55,599 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:55,613 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:55,649 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:55,663 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:56,268 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:56,283 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:56,314 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:56,330 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:56,363 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:56,378 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:56,412 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:56,430 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:56,479 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:56,491 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:56,525 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:56,546 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:56,586 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:56,604 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:56,633 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:56,647 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:56,674 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:56,687 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:56,717 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:56,732 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:56,767 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:56,785 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:56,823 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:56,839 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:56,884 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:56,903 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:56,936 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:56,951 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:56,982 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:56,995 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:57,036 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:57,049 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:57,083 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:57,101 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:57,131 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:57,145 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:57,186 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:57,201 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:57,231 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:57,246 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:57,274 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:57,292 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:57,332 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:57,350 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:57,395 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:57,414 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:57,470 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:57,488 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:57,527 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:57,540 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:57,578 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:57,593 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:57,622 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:57,638 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:57,673 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:57,690 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:57,726 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:57,746 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:57,790 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:57,806 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:57,837 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:57,852 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:57,879 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:57,893 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:57,918 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:57,930 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:57,964 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:57,978 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:58,005 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:58,019 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:58,046 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:58,063 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:58,117 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:58,132 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:58,159 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:58,176 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:58,207 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:58,226 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:58,266 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:58,280 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:58,314 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:58,333 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:58,388 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:58,412 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:58,457 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:58,473 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:58,513 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:58,530 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:58,574 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:58,594 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:58,635 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:58,653 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:58,684 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:58,698 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:58,727 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:58,740 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:58,767 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:58,779 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:58,806 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:58,819 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:58,845 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:58,862 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:58,886 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:58,899 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:58,929 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:58,942 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:58,974 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:58,992 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:59,019 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:59,035 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:59,069 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:59,083 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:59,127 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:59,153 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:59,186 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:59,201 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:59,234 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:59,247 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:59,276 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:59,294 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:59,336 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:59,350 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:59,376 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:59,395 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:59,423 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:59,437 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:59,468 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:59,485 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:59,517 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:59,529 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:59,554 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:59,570 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:59,601 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:59,613 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:59,637 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:59,649 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:59,675 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:59,686 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:59,716 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:59,727 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:59,751 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:59,764 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:59,789 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:59,802 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:59,833 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:59,849 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:59,878 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:59,889 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:59,915 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:59,930 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:00:59,969 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:00:59,986 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:00,020 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:00,033 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:00,066 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:00,083 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:00,122 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:00,139 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:00,183 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:00,199 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:00,234 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:00,258 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:00,289 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:00,310 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:00,348 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:00,361 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:00,388 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:00,402 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:00,443 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:00,459 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:00,493 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:00,507 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:00,532 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:00,544 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:00,570 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:00,583 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:00,610 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:00,623 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:00,659 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:00,672 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:00,698 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:00,711 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:00,739 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:00,752 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:00,780 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:00,797 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:00,825 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:00,837 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:00,861 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:00,873 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:00,898 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:00,908 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:00,938 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:01,118 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:01,156 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:01,193 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:01,221 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:01,236 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:01,272 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:01,285 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:01,312 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:01,326 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:01,375 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:01,387 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:01,418 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:01,441 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:01,506 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:01,520 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:01,546 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:01,564 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:01,595 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:01,613 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:01,651 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:01,668 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:01,713 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:01,725 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:01,755 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:01,779 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:01,810 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:01,827 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:01,868 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:01,885 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:01,913 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:01,926 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:02,053 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:02,100 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:02,135 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:02,148 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:02,183 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:02,203 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:02,243 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:02,254 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:02,282 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:02,295 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:02,324 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:02,335 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:02,378 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:02,395 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:02,439 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:02,456 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:02,496 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:02,512 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:02,552 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:02,566 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:02,595 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:02,610 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:02,640 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:02,653 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:02,679 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:02,692 [main] base.BaseTest  - Element '{jobLoader}' is displayed.
+INFO    2023-10-05 22:01:02,727 [main] base.BaseTest  - Scrolling to the Element : jobLoader
+INFO    2023-10-05 22:01:08,868 [main] base.BaseTest  - Checking the count of Element : jobLinks

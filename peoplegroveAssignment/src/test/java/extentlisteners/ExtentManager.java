@@ -52,7 +52,7 @@ public class ExtentManager {
 
 		// Capture a screenshot of the WebDriver and save it to the specified directory
 		File screenshot = ((TakesScreenshot) BaseTest.driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(screenshot, new File(".//reports//" + fileName));
+		FileUtils.copyFile(screenshot, new File(".//reports//Failure_Screenshot//" + fileName));
 	}
 
 	// Method to capture a screenshot of a WebElement and save it with a timestamped
@@ -63,7 +63,7 @@ public class ExtentManager {
 
 		// Capture a screenshot of the WebElement and save it to the specified directory
 		File screenshot = ((TakesScreenshot) element).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(screenshot, new File(".//screenshot//" + "Element_" + fileName));
+		FileUtils.copyFile(screenshot, new File(".//screenshot//Failure_Screenshot" + "Element_" + fileName));
 	}
 
 }
