@@ -236,6 +236,7 @@ public class CommonUtil extends BaseTest {
 						.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty(locatorKey))));
 				Actions actions = new Actions(driver);
 				actions.moveToElement(element).perform();
+				break;
 			} catch (NoSuchElementException e) {
 				System.out.println("Looking for Element : " + locatorKey.split("_")[0]);
 				retries++;

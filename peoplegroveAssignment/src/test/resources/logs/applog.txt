@@ -1,18 +1,17 @@
-INFO    2023-10-05 20:20:08,396 [main] base.BaseTest  - OR Properties file loaded!!!
-INFO    2023-10-05 20:20:08,397 [main] base.BaseTest  - Config Properties file loaded!!!
-INFO    2023-10-05 20:20:10,579 [main] base.BaseTest  - Chrome Browser Launched!!!
-INFO    2023-10-05 20:20:13,867 [main] base.BaseTest  - Navigated to : https://basecopy5.staging.pg-test.com/
-INFO    2023-10-05 20:20:16,711 [main] base.BaseTest  - Typing in an Element firstName and entered the value as Tester
-INFO    2023-10-05 20:20:16,808 [main] base.BaseTest  - Typing in an Element lastName and entered the value as Test
-INFO    2023-10-05 20:20:17,053 [main] base.BaseTest  - Typing in an Element email and entered the value as dummytest451@peoplegrove.com
-INFO    2023-10-05 20:20:17,197 [main] base.BaseTest  - Typing in an Element password and entered the value as Automation@123
-INFO    2023-10-05 20:20:27,508 [main] base.BaseTest  - Text Read from an Element students and Captured the value as Undergraduate Student
-INFO    2023-10-05 20:20:30,138 [main] base.BaseTest  - Text Read from an Element creatingContent and Captured the value as Creating content
-INFO    2023-10-05 20:20:30,203 [main] base.BaseTest  - Text Read from an Element learningLanguage and Captured the value as Learning new languages
-INFO    2023-10-05 20:20:30,292 [main] base.BaseTest  - Text Read from an Element music and Captured the value as Music
-INFO    2023-10-05 20:20:33,165 [main] base.BaseTest  - Text Read from an Element beingChallenged and Captured the value as Being challenged
-INFO    2023-10-05 20:20:33,222 [main] base.BaseTest  - Text Read from an Element beingCreative and Captured the value as Being creative
-INFO    2023-10-05 20:20:33,277 [main] base.BaseTest  - Text Read from an Element learningthings and Captured the value as Learning new things
-INFO    2023-10-05 20:20:36,777 [main] base.BaseTest  - Text Read from an Element laterPlease and Captured the value as Later, Please!
-INFO    2023-10-05 20:20:38,344 [main] base.BaseTest  - Text Read from an Element option1 and Captured the value as Find the best career path for me
-INFO    2023-10-05 20:21:51,084 [main] base.BaseTest  - Test Execution Completed!!
+INFO    2023-10-05 21:50:54,246 [main] base.BaseTest  - OR Properties file loaded!!!
+INFO    2023-10-05 21:50:54,255 [main] base.BaseTest  - Config Properties file loaded!!!
+INFO    2023-10-05 21:50:58,204 [main] base.BaseTest  - Chrome Browser Launched!!!
+INFO    2023-10-05 21:51:00,447 [main] base.BaseTest  - Navigated to : https://basecopy5.staging.pg-test.com/
+INFO    2023-10-05 21:51:02,874 [main] base.BaseTest  - Typing in an Element firstName and entered the value as Tester
+INFO    2023-10-05 21:51:03,006 [main] base.BaseTest  - Typing in an Element lastName and entered the value as Test
+INFO    2023-10-05 21:51:03,282 [main] base.BaseTest  - Typing in an Element email and entered the value as dummytest806@peoplegrove.com
+INFO    2023-10-05 21:51:03,443 [main] base.BaseTest  - Typing in an Element password and entered the value as Automation@123
+INFO    2023-10-05 21:51:13,796 [main] base.BaseTest  - Text Read from an Element students and Captured the value as Undergraduate Student
+INFO    2023-10-05 21:51:16,638 [main] base.BaseTest  - Text Read from an Element creatingContent and Captured the value as Creating content
+INFO    2023-10-05 21:51:16,782 [main] base.BaseTest  - Text Read from an Element learningLanguage and Captured the value as Learning new languages
+INFO    2023-10-05 21:51:16,912 [main] base.BaseTest  - Text Read from an Element music and Captured the value as Music
+INFO    2023-10-05 21:51:19,683 [main] base.BaseTest  - Text Read from an Element beingChallenged and Captured the value as Being challenged
+INFO    2023-10-05 21:51:19,813 [main] base.BaseTest  - Text Read from an Element beingCreative and Captured the value as Being creative
+INFO    2023-10-05 21:51:19,969 [main] base.BaseTest  - Text Read from an Element learningthings and Captured the value as Learning new things
+INFO    2023-10-05 21:51:24,219 [main] base.BaseTest  - Text Read from an Element laterPlease and Captured the value as Later, Please!
+INFO    2023-10-05 21:51:25,700 [main] base.BaseTest  - Text Read from an Element option1 and Captured the value as Find the best career path for me

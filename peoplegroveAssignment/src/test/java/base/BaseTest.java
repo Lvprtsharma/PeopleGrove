@@ -7,7 +7,7 @@ import java.util.Properties;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -67,11 +67,11 @@ public class BaseTest {
 		// Create a WebDriver instance based on the specified browser
 		if (config.getProperty("browser").equals("chrome")) {
 			
-//			ChromeOptions options = new ChromeOptions();
-//			options.addArguments("--headless=new");			
-//			driver = new ChromeDriver(options);
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--headless=new");			
+			driver = new ChromeDriver(options);
 			
-			driver = new ChromeDriver();
+//			driver = new ChromeDriver();
 			log.info("Chrome Browser Launched!!!");
 		} else if (config.getProperty("browser").equals("firefox")) {
 			driver = new FirefoxDriver();
