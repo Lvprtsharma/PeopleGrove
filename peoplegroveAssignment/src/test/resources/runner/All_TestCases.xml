@@ -15,7 +15,7 @@
 				<group name="Logout" depends-on="Signup"></group>
 				<group name="Login" depends-on="Logout"></group>
 			</dependencies>
-		</groups>
+		</groups> 
 		<classes>
 			<class name="testcases.SignUpTest" />
 			<class name="testcases.LogOut" />

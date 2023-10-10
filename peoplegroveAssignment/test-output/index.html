@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,80 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">14 methods,   14 passed</span>
+                    <span class="method-stats">21 methods, 3 failed,  8 skipped,  10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Assignment1" class="method navigator-link" hash-for-method="HomePageCheck">HomePageCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Assignment2" class="method navigator-link" hash-for-method="InspirationPathCheck">InspirationPathCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.SignUpTest" class="method navigator-link" hash-for-method="motivates_Selection">motivates_Selection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Assignment1" class="method navigator-link" hash-for-method="AskQuestionCheck">AskQuestionCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Assignment1" class="method navigator-link" hash-for-method="InboxPageCheck">InboxPageCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Assignment1" class="method navigator-link" hash-for-method="JobsPageCheck">JobsPageCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.LogOut" class="method navigator-link" hash-for-method="LogOutCheck">LogOutCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.LogOut" class="method navigator-link" hash-for-method="LogOutCheck">LogOutCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.LogOut" class="method navigator-link" hash-for-method="LogOutCheck">LogOutCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Assignment2" class="method navigator-link" hash-for-method="RecentlyViewCheck">RecentlyViewCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Assignment1" class="method navigator-link" hash-for-method="RecrtuierPageCheck">RecrtuierPageCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -109,27 +182,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.Assignment2" class="method navigator-link" hash-for-method="InspirationPathCheck">InspirationPathCheck</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.LogOut" class="method navigator-link" hash-for-method="LogOutCheck">LogOutCheck</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.LogOut" class="method navigator-link" hash-for-method="LogOutCheck">LogOutCheck</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testcases.LoginTest" class="method navigator-link" hash-for-method="Login(dummytest, Automation@123)">Login(dummytest, Automation@123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.Assignment2" class="method navigator-link" hash-for-method="RecentlyViewCheck">RecentlyViewCheck</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcases.LoginTest" class="method navigator-link" hash-for-method="Login(dummytest, Automation@123)">Login(dummytest, Automation@123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -150,11 +208,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testcases.SignUpTest" class="method navigator-link" hash-for-method="joiningAs_Selction">joiningAs_Selction</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.SignUpTest" class="method navigator-link" hash-for-method="motivates_Selection">motivates_Selection</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -184,6 +237,232 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.Assignment1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="HomePageCheck">
+                  </a> <!-- HomePageCheck -->
+                  <span class="method-name">HomePageCheck</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //p[normalize-space()=&quot;Jobs&quot;] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at utilities.CommonUtil.click(CommonUtil.java:63)
+	at testcases.Assignment1.HomePageCheck(Assignment1.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[normalize-space()=&quot;Jobs&quot;]&quot;}
+  (Session info: chrome=117.0.5938.149)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0d6e9f6f91c451cc676eae7371e056b5, findElement {using=xpath, value=//p[normalize-space()=&quot;Jobs&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\LOVEPR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59121}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59121/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d6e9f6f91c451cc676eae7371e056b5
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 30 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.Assignment2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="InspirationPathCheck">
+                  </a> <!-- InspirationPathCheck -->
+                  <span class="method-name">InspirationPathCheck</span>
+                  <div class="stack-trace">java.lang.AssertionError: Unable to perform Inspiration Path check!!
+	at testcases.Assignment2.InspirationPathCheck(Assignment2.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.SignUpTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="motivates_Selection">
+                  </a> <!-- motivates_Selection -->
+                  <span class="method-name">motivates_Selection</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //span[contains(text(),&apos;Being challenged&apos;)] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at utilities.CommonUtil.click(CommonUtil.java:63)
+	at testcases.SignUpTest.motivates_Selection(SignUpTest.java:93)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&apos;Being challenged&apos;)]&quot;}
+  (Session info: chrome=117.0.5938.149)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0d6e9f6f91c451cc676eae7371e056b5, findElement {using=xpath, value=//span[contains(text(),&apos;Being challenged&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\LOVEPR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59121}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59121/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d6e9f6f91c451cc676eae7371e056b5
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 30 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testcases.Assignment1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AskQuestionCheck">
+                  </a> <!-- AskQuestionCheck -->
+                  <span class="method-name">AskQuestionCheck</span>
+                  <div class="stack-trace">java.lang.Throwable: Method Assignment1.AskQuestionCheck()[pri:2, instance:testcases.Assignment1@71c27ee8] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="InboxPageCheck">
+                  </a> <!-- InboxPageCheck -->
+                  <span class="method-name">InboxPageCheck</span>
+                  <div class="stack-trace">java.lang.Throwable: Method Assignment1.InboxPageCheck(java.lang.String)[pri:4, instance:testcases.Assignment1@71c27ee8] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="JobsPageCheck">
+                  </a> <!-- JobsPageCheck -->
+                  <span class="method-name">JobsPageCheck</span>
+                  <div class="stack-trace">java.lang.Throwable: Method Assignment1.JobsPageCheck(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testcases.Assignment1@71c27ee8] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RecrtuierPageCheck">
+                  </a> <!-- RecrtuierPageCheck -->
+                  <span class="method-name">RecrtuierPageCheck</span>
+                  <div class="stack-trace">java.lang.Throwable: Method Assignment1.RecrtuierPageCheck()[pri:5, instance:testcases.Assignment1@71c27ee8] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testcases.LogOut</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LogOutCheck">
+                  </a> <!-- LogOutCheck -->
+                  <span class="method-name">LogOutCheck</span>
+                  <div class="stack-trace">java.lang.Throwable: Method LogOut.LogOutCheck()[pri:0, instance:testcases.LogOut@40db2a24] depends on not successfully finished methods in group &quot;Signup&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LogOutCheck">
+                  </a> <!-- LogOutCheck -->
+                  <span class="method-name">LogOutCheck</span>
+                  <div class="stack-trace">java.lang.Throwable: Method LogOut.LogOutCheck()[pri:0, instance:testcases.LogOut@3e7dd664] depends on not successfully finished methods in group &quot;Assignment&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LogOutCheck">
+                  </a> <!-- LogOutCheck -->
+                  <span class="method-name">LogOutCheck</span>
+                  <div class="stack-trace">java.lang.Throwable: Method LogOut.LogOutCheck()[pri:0, instance:testcases.LogOut@1a6c1270] depends on not successfully finished methods in group &quot;Assignment&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testcases.Assignment2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="RecentlyViewCheck">
+                  </a> <!-- RecentlyViewCheck -->
+                  <span class="method-name">RecentlyViewCheck</span>
+                  <div class="stack-trace">java.lang.Throwable: Method Assignment2.RecentlyViewCheck()[pri:4, instance:testcases.Assignment2@6d1ef78d] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -199,20 +478,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="InspirationPathCheck">
-                  </a> <!-- InspirationPathCheck -->
-                  <span class="method-name">InspirationPathCheck</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="RecentlyViewCheck">
-                  </a> <!-- RecentlyViewCheck -->
-                  <span class="method-name">RecentlyViewCheck</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="UpdateCheck">
                   </a> <!-- UpdateCheck -->
                   <span class="method-name">UpdateCheck</span>
@@ -223,21 +488,23 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcases.LogOut</span>
+              <span class="class-name">testcases.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="LogOutCheck">
-                  </a> <!-- LogOutCheck -->
-                  <span class="method-name">LogOutCheck</span>
+                  <a name="Login(dummytest, Automation@123)">
+                  </a> <!-- Login(dummytest, Automation@123) -->
+                  <span class="method-name">Login</span>
+                  <span class="parameters">(dummytest, Automation@123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="LogOutCheck">
-                  </a> <!-- LogOutCheck -->
-                  <span class="method-name">LogOutCheck</span>
+                  <a name="Login(dummytest, Automation@123)">
+                  </a> <!-- Login(dummytest, Automation@123) -->
+                  <span class="method-name">Login</span>
+                  <span class="parameters">(dummytest, Automation@123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -271,13 +538,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="motivates_Selection">
-                  </a> <!-- motivates_Selection -->
-                  <span class="method-name">motivates_Selection</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="photo_Selection">
                   </a> <!-- photo_Selection -->
                   <span class="method-name">photo_Selection</span>
@@ -296,22 +556,6 @@
                   <a name="signUp_Selction">
                   </a> <!-- signUp_Selction -->
                   <span class="method-name">signUp_Selction</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testcases.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Login(dummytest, Automation@123)">
-                  </a> <!-- Login(dummytest, Automation@123) -->
-                  <span class="method-name">Login</span>
-                  <span class="parameters">(dummytest, Automation@123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -345,6 +589,21 @@
       &lt;class name=&quot;testcases.LogOut&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Signup PeopleGrove --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Assignment 1&quot;&gt;
+    &lt;parameter name=&quot;password&quot; value=&quot;Automation@123&quot;/&gt;
+    &lt;parameter name=&quot;username&quot; value=&quot;dummytest&quot;/&gt;
+    &lt;groups&gt;
+      &lt;dependencies&gt;
+        &lt;group depends-on=&quot;Login&quot; name=&quot;Assignment&quot;/&gt;
+        &lt;group depends-on=&quot;Assignment&quot; name=&quot;Logout&quot;/&gt;
+      &lt;/dependencies&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.LoginTest&quot;/&gt;
+      &lt;class name=&quot;testcases.Assignment1&quot;/&gt;
+      &lt;class name=&quot;testcases.LogOut&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Assignment 1 --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Assignment 2&quot;&gt;
     &lt;parameter name=&quot;password&quot; value=&quot;Automation@123&quot;/&gt;
     &lt;parameter name=&quot;username&quot; value=&quot;dummytest&quot;/&gt;
@@ -374,6 +633,9 @@
                 <span class="test-name">Signup PeopleGrove (2 classes)</span>
               </li>
               <li>
+                <span class="test-name">Assignment 1 (3 classes)</span>
+              </li>
+              <li>
                 <span class="test-name">Assignment 2 (3 classes)</span>
               </li>
             </ul>
@@ -388,7 +650,19 @@
               <span class="test-group-name">Assignment</span>
               <br/>
               <div class="method-in-group">
+                <span class="method-in-group-name">AskQuestionCheck</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">CareerPageCheck</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">HomePageCheck</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">InboxPageCheck</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
@@ -396,7 +670,15 @@
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
+                <span class="method-in-group-name">JobsPageCheck</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">RecentlyViewCheck</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">RecrtuierPageCheck</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
@@ -468,68 +750,96 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(14);
+data.addRows(21);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'LogOutCheck')
-data.setCell(0, 2, 'testcases.LogOut')
-data.setCell(0, 3, 46003);
+data.setCell(0, 1, 'UpdateCheck')
+data.setCell(0, 2, 'testcases.Assignment2')
+data.setCell(0, 3, 31461);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'LogOutCheck')
-data.setCell(1, 2, 'testcases.LogOut')
-data.setCell(1, 3, 25770);
+data.setCell(1, 1, 'HomePageCheck')
+data.setCell(1, 2, 'testcases.Assignment1')
+data.setCell(1, 3, 30405);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'signUpDetails')
+data.setCell(2, 1, 'motivates_Selection')
 data.setCell(2, 2, 'testcases.SignUpTest')
-data.setCell(2, 3, 11013);
+data.setCell(2, 3, 30131);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'InspirationPathCheck')
-data.setCell(3, 2, 'testcases.Assignment2')
-data.setCell(3, 3, 9956);
+data.setCell(3, 1, 'Login')
+data.setCell(3, 2, 'testcases.LoginTest')
+data.setCell(3, 3, 30123);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'Login')
 data.setCell(4, 2, 'testcases.LoginTest')
-data.setCell(4, 3, 5795);
+data.setCell(4, 3, 30103);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'RecentlyViewCheck')
-data.setCell(5, 2, 'testcases.Assignment2')
-data.setCell(5, 3, 4820);
+data.setCell(5, 1, 'career_Selection')
+data.setCell(5, 2, 'testcases.SignUpTest')
+data.setCell(5, 3, 30099);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'enjoyDoing_Selection')
-data.setCell(6, 2, 'testcases.SignUpTest')
-data.setCell(6, 3, 3048);
+data.setCell(6, 1, 'InspirationPathCheck')
+data.setCell(6, 2, 'testcases.Assignment2')
+data.setCell(6, 3, 23284);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'motivates_Selection')
+data.setCell(7, 1, 'joiningAs_Selction')
 data.setCell(7, 2, 'testcases.SignUpTest')
-data.setCell(7, 3, 2397);
+data.setCell(7, 3, 18503);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'UpdateCheck')
-data.setCell(8, 2, 'testcases.Assignment2')
-data.setCell(8, 3, 2295);
+data.setCell(8, 1, 'signUpDetails')
+data.setCell(8, 2, 'testcases.SignUpTest')
+data.setCell(8, 3, 7501);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'photo_Selection')
+data.setCell(9, 1, 'enjoyDoing_Selection')
 data.setCell(9, 2, 'testcases.SignUpTest')
-data.setCell(9, 3, 2227);
+data.setCell(9, 3, 6609);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'career_Selection')
+data.setCell(10, 1, 'signUp_Selction')
 data.setCell(10, 2, 'testcases.SignUpTest')
-data.setCell(10, 3, 2052);
+data.setCell(10, 3, 4844);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'joiningAs_Selction')
+data.setCell(11, 1, 'photo_Selection')
 data.setCell(11, 2, 'testcases.SignUpTest')
-data.setCell(11, 3, 1239);
+data.setCell(11, 3, 1325);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'signUp_Selction')
-data.setCell(12, 2, 'testcases.SignUpTest')
-data.setCell(12, 3, 402);
+data.setCell(12, 1, 'CareerPageCheck')
+data.setCell(12, 2, 'testcases.Assignment2')
+data.setCell(12, 3, 429);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'CareerPageCheck')
-data.setCell(13, 2, 'testcases.Assignment2')
-data.setCell(13, 3, 104);
+data.setCell(13, 1, 'LogOutCheck')
+data.setCell(13, 2, 'testcases.LogOut')
+data.setCell(13, 3, 1);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'AskQuestionCheck')
+data.setCell(14, 2, 'testcases.Assignment1')
+data.setCell(14, 3, 1);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'LogOutCheck')
+data.setCell(15, 2, 'testcases.LogOut')
+data.setCell(15, 3, 0);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'InboxPageCheck')
+data.setCell(16, 2, 'testcases.Assignment1')
+data.setCell(16, 3, 0);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'RecrtuierPageCheck')
+data.setCell(17, 2, 'testcases.Assignment1')
+data.setCell(17, 3, 0);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'JobsPageCheck')
+data.setCell(18, 2, 'testcases.Assignment1')
+data.setCell(18, 3, 0);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'LogOutCheck')
+data.setCell(19, 2, 'testcases.LogOut')
+data.setCell(19, 3, 0);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'RecentlyViewCheck')
+data.setCell(20, 2, 'testcases.Assignment2')
+data.setCell(20, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -544,11 +854,11 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">6 ignored methods</span>
+            <span class="header-content">10 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">testcases.Assignment2</span>
+              <span class="ignored-class-name">testcases.Assignment1</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setup</span>
                 <br/>
@@ -563,7 +873,20 @@ return data;
                 <br/>
                 <span class="ignored-method-name">setup</span>
                 <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
                 <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.Assignment2</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
                 <br/>
                 <span class="ignored-method-name">tearDown</span>
                 <br/>
@@ -587,78 +910,121 @@ return data;
               <div class="chronological-class-name">testcases.SignUpTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">signUp_Selction</span>
-                <span class="method-start">10540 ms</span>
+                <span class="method-start">48614 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">signUpDetails(Tester, Test, dummytest, Automation@123)</span>
-                <span class="method-start">10958 ms</span>
+                <span class="method-start">53535 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">joiningAs_Selction</span>
-                <span class="method-start">21975 ms</span>
+                <span class="method-start">61039 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">enjoyDoing_Selection</span>
-                <span class="method-start">23216 ms</span>
+                <span class="method-start">79549 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">motivates_Selection</span>
-                <span class="method-start">26268 ms</span>
+                <span class="method-start">86162 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">photo_Selection</span>
-                <span class="method-start">28666 ms</span>
+                <span class="method-start">116923 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">career_Selection</span>
-                <span class="method-start">30895 ms</span>
+                <span class="method-start">118251 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.LogOut</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">LogOutCheck</span>
-                <span class="method-start">32953 ms</span>
+                <span class="method-start">148356 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.LoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">Login(dummytest, Automation@123)</span>
-                <span class="method-start">79272 ms</span>
+                <span class="method-start">149047 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.Assignment2</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.Assignment1</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">CareerPageCheck</span>
-                <span class="method-start">85069 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">HomePageCheck</span>
+                <span class="method-start">179172 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">InspirationPathCheck</span>
-                <span class="method-start">85175 ms</span>
+                <span class="method-name">AskQuestionCheck</span>
+                <span class="method-start">209906 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">UpdateCheck</span>
-                <span class="method-start">95133 ms</span>
+                <span class="method-name">JobsPageCheck</span>
+                <span class="method-start">209913 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">RecentlyViewCheck</span>
-                <span class="method-start">97430 ms</span>
+                <span class="method-name">InboxPageCheck</span>
+                <span class="method-start">209921 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">RecrtuierPageCheck</span>
+                <span class="method-start">209930 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.LogOut</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">LogOutCheck</span>
-                <span class="method-start">102251 ms</span>
+                <span class="method-start">209940 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Login(dummytest, Automation@123)</span>
+                <span class="method-start">210151 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Assignment2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">CareerPageCheck</span>
+                <span class="method-start">240257 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">InspirationPathCheck</span>
+                <span class="method-start">240690 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">UpdateCheck</span>
+                <span class="method-start">264309 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">RecentlyViewCheck</span>
+                <span class="method-start">295772 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.LogOut</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">LogOutCheck</span>
+                <span class="method-start">295775 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">128079 ms</span>
+                <span class="method-start">295842 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

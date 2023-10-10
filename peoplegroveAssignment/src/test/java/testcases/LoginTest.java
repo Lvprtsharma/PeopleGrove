@@ -4,9 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import utilities.CommonUtil;
-
-public class LoginTest extends CommonUtil {
+public class LoginTest extends SignUpTest {
 
 	@Test(priority = 1, groups = { "Login" })
 	@Parameters({ "username", "password" })
@@ -18,8 +16,8 @@ public class LoginTest extends CommonUtil {
 			System.out.println("Clicked on SignIn Option!!");
 
 			// Type the username into the email input field
-			type("email_XPATH", username + SignUpTest.randomNum + "@peoplegrove.com");
-			System.out.println("Username Entered : " + username + SignUpTest.randomNum + "@peoplegrove.com");
+			type("email_XPATH", username + randomNum + "@peoplegrove.com");
+			System.out.println("Username Entered : " + username + randomNum + "@peoplegrove.com");
 
 			// Type the password into the password input field
 			type("password_XPATH", password);

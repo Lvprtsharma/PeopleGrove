@@ -11,6 +11,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -43,7 +44,7 @@ public class CommonUtil extends BaseTest {
 	}
 
 	// Click Method to click on an element
-	public static void click(String locatorKey) {
+	public void click(String locatorKey) {
 
 		if (locatorKey.endsWith("_XPATH")) {
 
@@ -62,6 +63,11 @@ public class CommonUtil extends BaseTest {
 							.until(ExpectedConditions.presenceOfElementLocated(By.xpath(OR.getProperty(locatorKey))))
 							.click();
 					break;
+				} catch (TimeoutException e) {
+					explicitWait()
+							.until(ExpectedConditions.presenceOfElementLocated(By.xpath(OR.getProperty(locatorKey))))
+							.click();
+					break;
 				}
 				log.info("Clicking on an Element : " + locatorKey.split("_")[0]);
 				ExtentListeners.test.info("Clicking on an Element : " + locatorKey.split("_")[0]);
@@ -70,8 +76,36 @@ public class CommonUtil extends BaseTest {
 		}
 	}
 
+	// Clear Method to clear on an element
+	public void clear(String locatorKey) {
+
+		if (locatorKey.endsWith("_XPATH")) {
+
+			while (retries < maxRetries) {
+				try {
+					driver.findElement(By.xpath(OR.getProperty(locatorKey))).clear();
+					break; // Break the loop if the actions are successful
+				} catch (StaleElementReferenceException e) {
+					System.out.println("Stale Element Reference Exception Occured!!");
+				} catch (ElementClickInterceptedException e) {
+					JavascriptExecutor js = (JavascriptExecutor) driver;
+					js.executeScript("arguments[0].clear();", driver.findElement(By.xpath(OR.getProperty(locatorKey))));
+					break;
+				} catch (NoSuchElementException e) {
+					explicitWait()
+							.until(ExpectedConditions.presenceOfElementLocated(By.xpath(OR.getProperty(locatorKey))))
+							.clear();
+					break;
+				}
+				log.info("Clearing an Element : " + locatorKey.split("_")[0]);
+				ExtentListeners.test.info("Clearing an Element : " + locatorKey.split("_")[0]);
+				retries++;
+			}
+		}
+	}
+
 	// Type method to type in a text area
-	public static void type(String locatorKey, String value) throws InterruptedException {
+	public void type(String locatorKey, String value) {
 
 		if (locatorKey.endsWith("_XPATH")) {
 			try {
@@ -90,7 +124,7 @@ public class CommonUtil extends BaseTest {
 	}
 
 	// Get Text method to extract the text written on UI
-	public static String getText(String locatorKey) {
+	public String getText(String locatorKey) {
 		String text = "";
 		try {
 			text = driver.findElement(By.xpath(OR.getProperty(locatorKey))).getText();
@@ -135,9 +169,14 @@ public class CommonUtil extends BaseTest {
 //	}
 
 	// Enter method to perform enter action
-	public static void enterClick(String locatorKey) throws InterruptedException {
+	public void enterClick(String locatorKey) {
 		if (locatorKey.endsWith("_XPATH")) {
-			Thread.sleep(500);
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			driver.findElement(By.xpath(OR.getProperty(locatorKey))).sendKeys(Keys.ENTER);
 		}
 		log.info("Clicking Enter on an Element : " + locatorKey.split("_")[0]);
@@ -145,7 +184,7 @@ public class CommonUtil extends BaseTest {
 	}
 
 	// Element Display method to check if an element is visible or not
-	public static boolean isElementDisplayed(String locatorKey, int maxRetry) throws InterruptedException {
+	public boolean isElementDisplayed(String locatorKey, int maxRetry) {
 
 		while (retries < maxRetry) {
 			try {
@@ -166,7 +205,7 @@ public class CommonUtil extends BaseTest {
 	}
 
 	// Method to check if element is already selected or not
-	public static boolean isElementSelected(String locatorKey) {
+	public boolean isElementSelected(String locatorKey) {
 		try {
 			WebElement element = driver.findElement(By.xpath(OR.getProperty(locatorKey)));
 			boolean result = element.isSelected();
@@ -182,7 +221,7 @@ public class CommonUtil extends BaseTest {
 	}
 
 	// Method to generate a random number
-	public static int RandomNumberGenerator() {
+	public int RandomNumberGenerator() {
 		Random rand = new Random();
 		int randomNumber = rand.nextInt(1000);
 		return randomNumber;
@@ -190,18 +229,17 @@ public class CommonUtil extends BaseTest {
 
 	// Scroll method to scroll either to a specific element or by specific
 	// co-ordinates
-	public static void scroll(String locatorKey, int horizontal, int vertical) throws InterruptedException {
+	public void scroll(String locatorKey, int horizontal, int vertical) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		if (locatorKey != null) {
 			try {
 				if (locatorKey.endsWith("_XPATH")) {
 
-					WebElement element = explicitWait()
-							.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty(locatorKey))));
+					WebElement element = driver.findElement(By.xpath(OR.getProperty(locatorKey)));
 					js.executeScript("arguments[0].scrollIntoView();", element);
 
 				}
-			} catch (NoSuchElementException e) {
+			} catch (Exception e) {
 				System.out.println(locatorKey.split("_")[0] + " is not availble!!");
 			}
 		} else {
@@ -212,7 +250,7 @@ public class CommonUtil extends BaseTest {
 	}
 
 	// Method to get the size of all sub-elements of a particular element
-	public static List<WebElement> elementSize(String locatorKey) {
+	public List<WebElement> checkElementSize(String locatorKey) {
 
 		List<WebElement> elementList = null;
 		if (locatorKey.endsWith("_XPATH")) {
@@ -228,9 +266,9 @@ public class CommonUtil extends BaseTest {
 	}
 
 	// MouseHover Action
-	public static void mouseHover(String locatorKey) {
-		
-		while(retries < maxRetries) {
+	public void mouseHover(String locatorKey) {
+
+		while (retries < maxRetries) {
 			try {
 				WebElement element = explicitWait()
 						.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty(locatorKey))));

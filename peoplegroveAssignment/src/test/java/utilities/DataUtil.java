@@ -4,7 +4,7 @@ import org.testng.annotations.DataProvider;
 
 import base.BaseTest;
 
-public class DataUtil extends BaseTest {
+public abstract class DataUtil extends BaseTest {
 	
 	@DataProvider(name = "jobPage")
 	public Object[][] getSignUpData() {

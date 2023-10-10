@@ -68,7 +68,7 @@ public class Assignment2 extends CommonUtil {
 			System.out.println("Switching to Popup Window!!");
 
 			//Scrolling to the third option in pop-up
-			CommonUtil.scroll("3rdOption_XPATH", 0, 0);	
+			scroll("3rdOption_XPATH", 0, 0);	
 			System.out.println("Scrolled to check 3rd option!!");
 			
 			boolean isSelected = isElementDisplayed("3rdOption_XPATH", 1);
@@ -105,7 +105,7 @@ public class Assignment2 extends CommonUtil {
 			click("careerPath_XPATH");		//CLick on Career Path
 			System.out.println("Clicked on Career Path!!");
 			
-			CommonUtil.scroll("recentlyViewedLink_XPATH", 0, 0); //Scrolling to recently viewed
+			scroll("recentlyViewedLink_XPATH", 0, 0); //Scrolling to recently viewed
 			System.out.println("Scrolling to Recently Reviewed!!");
 			
 			String review = OR.getProperty("recentlyViewedCareers_XPATH");
@@ -143,10 +143,10 @@ public class Assignment2 extends CommonUtil {
 	//Method to select the career links
 	public void careerPathSelect(int i) throws InterruptedException {
 
-		CommonUtil.scroll("inspiration_XPATH", 0, 0);
+		scroll("inspiration_XPATH", 0, 0);
 		Thread.sleep(1000);					//Script is running very fast, these sleeps are just to slow down for clear observation
 		
-		careerLinks = elementSize("inspirationOptions_XPATH"); // counting the size of job links
+		careerLinks = checkElementSize("inspirationOptions_XPATH"); // counting the size of job links
 		careerLinks.get(i).click();
 		Thread.sleep(1000); 				//Script is running very fast, these sleeps are just to slow down for clear observation
 		

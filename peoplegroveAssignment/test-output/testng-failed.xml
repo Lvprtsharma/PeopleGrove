@@ -4,20 +4,49 @@
   <listeners>
     <listener class-name="extentlisteners.ExtentListeners"/>
   </listeners>
-  <test thread-count="5" name="Assignment 2(failed)">
+  <test thread-count="5" name="Signup PeopleGrove(failed)">
+    <parameter name="firstname" value="Tester"/>
     <parameter name="password" value="Automation@123"/>
+    <parameter name="lastname" value="Test"/>
     <parameter name="username" value="dummytest"/>
     <classes>
-      <class name="testcases.Assignment2">
+      <class name="testcases.LogOut">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="RecentlyViewCheck"/>
-          <include name="UpdateCheck"/>
-          <include name="InspirationPathCheck"/>
-          <include name="CareerPageCheck"/>
+          <include name="LogOutCheck"/>
         </methods>
-      </class> <!-- testcases.Assignment2 -->
+      </class> <!-- testcases.LogOut -->
+      <class name="testcases.SignUpTest">
+        <methods>
+          <include name="setup"/>
+          <include name="enjoyDoing_Selection"/>
+          <include name="tearDown"/>
+          <include name="motivates_Selection"/>
+          <include name="photo_Selection"/>
+          <include name="joiningAs_Selction"/>
+          <include name="career_Selection"/>
+          <include name="signUpDetails"/>
+          <include name="signUp_Selction"/>
+        </methods>
+      </class> <!-- testcases.SignUpTest -->
+    </classes>
+  </test> <!-- Signup PeopleGrove(failed) -->
+  <test thread-count="5" name="Assignment 1(failed)">
+    <parameter name="password" value="Automation@123"/>
+    <parameter name="username" value="dummytest"/>
+    <classes>
+      <class name="testcases.Assignment1">
+        <methods>
+          <include name="RecrtuierPageCheck"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="AskQuestionCheck"/>
+          <include name="JobsPageCheck"/>
+          <include name="HomePageCheck"/>
+          <include name="InboxPageCheck"/>
+        </methods>
+      </class> <!-- testcases.Assignment1 -->
       <class name="testcases.LogOut">
         <methods>
           <include name="setup"/>
@@ -28,7 +57,37 @@
       <class name="testcases.LoginTest">
         <methods>
           <include name="setup"/>
-          <include name="Login" invocation-numbers="0"/>
+          <include name="Login"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcases.LoginTest -->
+    </classes>
+  </test> <!-- Assignment 1(failed) -->
+  <test thread-count="5" name="Assignment 2(failed)">
+    <parameter name="password" value="Automation@123"/>
+    <parameter name="username" value="dummytest"/>
+    <classes>
+      <class name="testcases.LogOut">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="LogOutCheck"/>
+        </methods>
+      </class> <!-- testcases.LogOut -->
+      <class name="testcases.Assignment2">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="RecentlyViewCheck"/>
+          <include name="UpdateCheck"/>
+          <include name="InspirationPathCheck"/>
+          <include name="CareerPageCheck"/>
+        </methods>
+      </class> <!-- testcases.Assignment2 -->
+      <class name="testcases.LoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="Login"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- testcases.LoginTest -->

@@ -8,7 +8,7 @@ import utilities.CommonUtil;
 
 public class SignUpTest extends CommonUtil {
 
-	public static int randomNum = CommonUtil.RandomNumberGenerator();
+	public int randomNum = RandomNumberGenerator();
 
 	@Test(priority = 1, groups = { "Signup" })
 	public void signUp_Selction() {
@@ -40,9 +40,10 @@ public class SignUpTest extends CommonUtil {
 			click("agreePolicy_XPATH");
 			click("createAccount_XPATH");
 
-			if (isElementDisplayed("accountExists_XPATH",1)) {
+			if (isElementDisplayed("accountExists_XPATH", 1)) {
 
 				System.out.println("This account already exists");
+				clear("email_XPATH");
 				type("email_XPATH", username + randomNum + 1 + "@peoplegrove.com");
 
 				System.out.println("Retyped Username : " + username + randomNum + 1 + "@peoplegrove.com");

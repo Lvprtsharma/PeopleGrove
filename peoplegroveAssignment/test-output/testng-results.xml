@@ -1,45 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="20" passed="14" failed="0" skipped="0">
+<testng-results ignored="10" total="31" passed="10" failed="3" skipped="8">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-05T18:28:50 IST" name="Suite" finished-at="2023-10-05T18:30:48 IST" duration-ms="117519">
+  <suite started-at="2023-10-06T20:29:10 IST" name="Suite" finished-at="2023-10-06T20:33:18 IST" duration-ms="247249">
     <groups>
       <group name="Assignment">
-        <method signature="Assignment2.CareerPageCheck()[pri:1, instance:testcases.Assignment2@4748a0f9]" name="CareerPageCheck" class="testcases.Assignment2"/>
-        <method signature="Assignment2.InspirationPathCheck()[pri:2, instance:testcases.Assignment2@4748a0f9]" name="InspirationPathCheck" class="testcases.Assignment2"/>
-        <method signature="Assignment2.RecentlyViewCheck()[pri:4, instance:testcases.Assignment2@4748a0f9]" name="RecentlyViewCheck" class="testcases.Assignment2"/>
-        <method signature="Assignment2.UpdateCheck()[pri:3, instance:testcases.Assignment2@4748a0f9]" name="UpdateCheck" class="testcases.Assignment2"/>
+        <method signature="Assignment1.HomePageCheck()[pri:1, instance:testcases.Assignment1@71c27ee8]" name="HomePageCheck" class="testcases.Assignment1"/>
+        <method signature="Assignment1.AskQuestionCheck()[pri:2, instance:testcases.Assignment1@71c27ee8]" name="AskQuestionCheck" class="testcases.Assignment1"/>
+        <method signature="Assignment1.JobsPageCheck(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testcases.Assignment1@71c27ee8]" name="JobsPageCheck" class="testcases.Assignment1"/>
+        <method signature="Assignment1.InboxPageCheck(java.lang.String)[pri:4, instance:testcases.Assignment1@71c27ee8]" name="InboxPageCheck" class="testcases.Assignment1"/>
+        <method signature="Assignment1.RecrtuierPageCheck()[pri:5, instance:testcases.Assignment1@71c27ee8]" name="RecrtuierPageCheck" class="testcases.Assignment1"/>
+        <method signature="Assignment2.CareerPageCheck()[pri:1, instance:testcases.Assignment2@6d1ef78d]" name="CareerPageCheck" class="testcases.Assignment2"/>
+        <method signature="Assignment2.InspirationPathCheck()[pri:2, instance:testcases.Assignment2@6d1ef78d]" name="InspirationPathCheck" class="testcases.Assignment2"/>
+        <method signature="Assignment2.RecentlyViewCheck()[pri:4, instance:testcases.Assignment2@6d1ef78d]" name="RecentlyViewCheck" class="testcases.Assignment2"/>
+        <method signature="Assignment2.UpdateCheck()[pri:3, instance:testcases.Assignment2@6d1ef78d]" name="UpdateCheck" class="testcases.Assignment2"/>
       </group> <!-- Assignment -->
       <group name="Signup">
-        <method signature="SignUpTest.career_Selection()[pri:7, instance:testcases.SignUpTest@30af5b6b]" name="career_Selection" class="testcases.SignUpTest"/>
-        <method signature="SignUpTest.enjoyDoing_Selection()[pri:4, instance:testcases.SignUpTest@30af5b6b]" name="enjoyDoing_Selection" class="testcases.SignUpTest"/>
-        <method signature="SignUpTest.joiningAs_Selction()[pri:3, instance:testcases.SignUpTest@30af5b6b]" name="joiningAs_Selction" class="testcases.SignUpTest"/>
-        <method signature="SignUpTest.motivates_Selection()[pri:5, instance:testcases.SignUpTest@30af5b6b]" name="motivates_Selection" class="testcases.SignUpTest"/>
-        <method signature="SignUpTest.photo_Selection()[pri:6, instance:testcases.SignUpTest@30af5b6b]" name="photo_Selection" class="testcases.SignUpTest"/>
-        <method signature="SignUpTest.signUpDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testcases.SignUpTest@30af5b6b]" name="signUpDetails" class="testcases.SignUpTest"/>
-        <method signature="SignUpTest.signUp_Selction()[pri:1, instance:testcases.SignUpTest@30af5b6b]" name="signUp_Selction" class="testcases.SignUpTest"/>
+        <method signature="SignUpTest.career_Selection()[pri:7, instance:testcases.SignUpTest@73194df]" name="career_Selection" class="testcases.SignUpTest"/>
+        <method signature="SignUpTest.enjoyDoing_Selection()[pri:4, instance:testcases.SignUpTest@73194df]" name="enjoyDoing_Selection" class="testcases.SignUpTest"/>
+        <method signature="SignUpTest.joiningAs_Selction()[pri:3, instance:testcases.SignUpTest@73194df]" name="joiningAs_Selction" class="testcases.SignUpTest"/>
+        <method signature="SignUpTest.motivates_Selection()[pri:5, instance:testcases.SignUpTest@73194df]" name="motivates_Selection" class="testcases.SignUpTest"/>
+        <method signature="SignUpTest.photo_Selection()[pri:6, instance:testcases.SignUpTest@73194df]" name="photo_Selection" class="testcases.SignUpTest"/>
+        <method signature="SignUpTest.signUpDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testcases.SignUpTest@73194df]" name="signUpDetails" class="testcases.SignUpTest"/>
+        <method signature="SignUpTest.signUp_Selction()[pri:1, instance:testcases.SignUpTest@73194df]" name="signUp_Selction" class="testcases.SignUpTest"/>
       </group> <!-- Signup -->
       <group name="Logout">
-        <method signature="LogOut.LogOutCheck()[pri:0, instance:testcases.LogOut@63787180]" name="LogOutCheck" class="testcases.LogOut"/>
-        <method signature="LogOut.LogOutCheck()[pri:0, instance:testcases.LogOut@4b14918a]" name="LogOutCheck" class="testcases.LogOut"/>
+        <method signature="LogOut.LogOutCheck()[pri:0, instance:testcases.LogOut@40db2a24]" name="LogOutCheck" class="testcases.LogOut"/>
+        <method signature="LogOut.LogOutCheck()[pri:0, instance:testcases.LogOut@3e7dd664]" name="LogOutCheck" class="testcases.LogOut"/>
+        <method signature="LogOut.LogOutCheck()[pri:0, instance:testcases.LogOut@1a6c1270]" name="LogOutCheck" class="testcases.LogOut"/>
       </group> <!-- Logout -->
       <group name="Login">
-        <method signature="LoginTest.Login(java.lang.String,java.lang.String)[pri:1, instance:testcases.LoginTest@53dbe163]" name="Login" class="testcases.LoginTest"/>
+        <method signature="LoginTest.Login(java.lang.String,java.lang.String)[pri:1, instance:testcases.LoginTest@5143c662]" name="Login" class="testcases.LoginTest"/>
+        <method signature="LoginTest.Login(java.lang.String,java.lang.String)[pri:1, instance:testcases.LoginTest@4b14918a]" name="Login" class="testcases.LoginTest"/>
       </group> <!-- Login -->
     </groups>
-    <test started-at="2023-10-05T18:28:50 IST" name="Signup PeopleGrove" finished-at="2023-10-05T18:29:59 IST" duration-ms="68453">
+    <test started-at="2023-10-06T20:29:10 IST" name="Signup PeopleGrove" finished-at="2023-10-06T20:30:50 IST" duration-ms="99832">
       <class name="testcases.LogOut">
-        <test-method signature="LogOutCheck()[pri:0, instance:testcases.LogOut@63787180]" started-at="2023-10-05T18:29:13 IST" name="LogOutCheck" depends-on-groups="Signup" finished-at="2023-10-05T18:29:59 IST" duration-ms="46003" status="PASS">
+        <test-method signature="LogOutCheck()[pri:0, instance:testcases.LogOut@40db2a24]" started-at="2023-10-06T20:30:50 IST" name="LogOutCheck" depends-on-groups="Signup" finished-at="2023-10-06T20:30:50 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method LogOut.LogOutCheck()[pri:0, instance:testcases.LogOut@40db2a24] depends on not successfully finished methods in group "Signup"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method LogOut.LogOutCheck()[pri:0, instance:testcases.LogOut@40db2a24] depends on not successfully finished methods in group "Signup"
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogOutCheck -->
       </class> <!-- testcases.LogOut -->
       <class name="testcases.SignUpTest">
-        <test-method signature="signUp_Selction()[pri:1, instance:testcases.SignUpTest@30af5b6b]" started-at="2023-10-05T18:28:50 IST" name="signUp_Selction" finished-at="2023-10-05T18:28:51 IST" duration-ms="402" status="PASS">
+        <test-method signature="signUp_Selction()[pri:1, instance:testcases.SignUpTest@73194df]" started-at="2023-10-06T20:29:10 IST" name="signUp_Selction" finished-at="2023-10-06T20:29:15 IST" duration-ms="4844" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUp_Selction -->
-        <test-method signature="signUpDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testcases.SignUpTest@30af5b6b]" started-at="2023-10-05T18:28:51 IST" name="signUpDetails" finished-at="2023-10-05T18:29:02 IST" duration-ms="11013" status="PASS">
+        <test-method signature="signUpDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testcases.SignUpTest@73194df]" started-at="2023-10-06T20:29:15 IST" name="signUpDetails" finished-at="2023-10-06T20:29:23 IST" duration-ms="7501" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -65,59 +100,134 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpDetails -->
-        <test-method signature="joiningAs_Selction()[pri:3, instance:testcases.SignUpTest@30af5b6b]" started-at="2023-10-05T18:29:02 IST" name="joiningAs_Selction" finished-at="2023-10-05T18:29:03 IST" duration-ms="1239" status="PASS">
+        <test-method signature="joiningAs_Selction()[pri:3, instance:testcases.SignUpTest@73194df]" started-at="2023-10-06T20:29:23 IST" name="joiningAs_Selction" finished-at="2023-10-06T20:29:41 IST" duration-ms="18503" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- joiningAs_Selction -->
-        <test-method signature="enjoyDoing_Selection()[pri:4, instance:testcases.SignUpTest@30af5b6b]" started-at="2023-10-05T18:29:03 IST" name="enjoyDoing_Selection" finished-at="2023-10-05T18:29:06 IST" duration-ms="3048" status="PASS">
+        <test-method signature="enjoyDoing_Selection()[pri:4, instance:testcases.SignUpTest@73194df]" started-at="2023-10-06T20:29:41 IST" name="enjoyDoing_Selection" finished-at="2023-10-06T20:29:48 IST" duration-ms="6609" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enjoyDoing_Selection -->
-        <test-method signature="motivates_Selection()[pri:5, instance:testcases.SignUpTest@30af5b6b]" started-at="2023-10-05T18:29:06 IST" name="motivates_Selection" finished-at="2023-10-05T18:29:08 IST" duration-ms="2397" status="PASS">
+        <test-method signature="motivates_Selection()[pri:5, instance:testcases.SignUpTest@73194df]" started-at="2023-10-06T20:29:48 IST" name="motivates_Selection" finished-at="2023-10-06T20:30:18 IST" duration-ms="30131" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.xpath: //span[contains(text(),'Being challenged')] (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //span[contains(text(),'Being challenged')] (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at utilities.CommonUtil.click(CommonUtil.java:63)
+at testcases.SignUpTest.motivates_Selection(SignUpTest.java:93)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Being challenged')]"}
+  (Session info: chrome=117.0.5938.149)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0d6e9f6f91c451cc676eae7371e056b5, findElement {using=xpath, value=//span[contains(text(),'Being challenged')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\LOVEPR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59121}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59121/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d6e9f6f91c451cc676eae7371e056b5
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- motivates_Selection -->
-        <test-method signature="photo_Selection()[pri:6, instance:testcases.SignUpTest@30af5b6b]" started-at="2023-10-05T18:29:08 IST" name="photo_Selection" finished-at="2023-10-05T18:29:11 IST" duration-ms="2227" status="PASS">
+        <test-method signature="photo_Selection()[pri:6, instance:testcases.SignUpTest@73194df]" started-at="2023-10-06T20:30:19 IST" name="photo_Selection" finished-at="2023-10-06T20:30:20 IST" duration-ms="1325" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- photo_Selection -->
-        <test-method signature="career_Selection()[pri:7, instance:testcases.SignUpTest@30af5b6b]" started-at="2023-10-05T18:29:11 IST" name="career_Selection" finished-at="2023-10-05T18:29:13 IST" duration-ms="2052" status="PASS">
+        <test-method signature="career_Selection()[pri:7, instance:testcases.SignUpTest@73194df]" started-at="2023-10-06T20:30:20 IST" name="career_Selection" finished-at="2023-10-06T20:30:50 IST" duration-ms="30099" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- career_Selection -->
       </class> <!-- testcases.SignUpTest -->
     </test> <!-- Signup PeopleGrove -->
-    <test started-at="2023-10-05T18:29:59 IST" name="Assignment 2" finished-at="2023-10-05T18:30:48 IST" duration-ms="48754">
+    <test started-at="2023-10-06T20:30:51 IST" name="Assignment 1" finished-at="2023-10-06T20:31:52 IST" duration-ms="60902">
       <class name="testcases.LogOut">
-        <test-method signature="LogOutCheck()[pri:0, instance:testcases.LogOut@4b14918a]" started-at="2023-10-05T18:30:22 IST" name="LogOutCheck" depends-on-groups="Assignment" finished-at="2023-10-05T18:30:48 IST" duration-ms="25770" status="PASS">
+        <test-method signature="LogOutCheck()[pri:0, instance:testcases.LogOut@3e7dd664]" started-at="2023-10-06T20:31:52 IST" name="LogOutCheck" depends-on-groups="Assignment" finished-at="2023-10-06T20:31:52 IST" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method LogOut.LogOutCheck()[pri:0, instance:testcases.LogOut@3e7dd664] depends on not successfully finished methods in group "Assignment"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method LogOut.LogOutCheck()[pri:0, instance:testcases.LogOut@3e7dd664] depends on not successfully finished methods in group "Assignment"
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogOutCheck -->
       </class> <!-- testcases.LogOut -->
-      <class name="testcases.Assignment2">
-        <test-method signature="CareerPageCheck()[pri:1, instance:testcases.Assignment2@4748a0f9]" started-at="2023-10-05T18:30:05 IST" name="CareerPageCheck" depends-on-groups="Login, Login" finished-at="2023-10-05T18:30:05 IST" duration-ms="104" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CareerPageCheck -->
-        <test-method signature="InspirationPathCheck()[pri:2, instance:testcases.Assignment2@4748a0f9]" started-at="2023-10-05T18:30:05 IST" name="InspirationPathCheck" depends-on-groups="Login" finished-at="2023-10-05T18:30:15 IST" depends-on-methods="testcases.Assignment2.CareerPageCheck" duration-ms="9956" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InspirationPathCheck -->
-        <test-method signature="UpdateCheck()[pri:3, instance:testcases.Assignment2@4748a0f9]" started-at="2023-10-05T18:30:15 IST" name="UpdateCheck" depends-on-groups="Login" finished-at="2023-10-05T18:30:17 IST" depends-on-methods="testcases.Assignment2.CareerPageCheck" duration-ms="2295" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UpdateCheck -->
-        <test-method signature="RecentlyViewCheck()[pri:4, instance:testcases.Assignment2@4748a0f9]" started-at="2023-10-05T18:30:17 IST" name="RecentlyViewCheck" depends-on-groups="Login" finished-at="2023-10-05T18:30:22 IST" depends-on-methods="testcases.Assignment2.InspirationPathCheck, testcases.Assignment2.CareerPageCheck" duration-ms="4820" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RecentlyViewCheck -->
-      </class> <!-- testcases.Assignment2 -->
       <class name="testcases.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@53dbe163]" started-at="2023-10-05T18:28:40 IST" name="setup" finished-at="2023-10-05T18:28:50 IST" duration-ms="10502" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Login(java.lang.String,java.lang.String)[pri:1, instance:testcases.LoginTest@53dbe163]" started-at="2023-10-05T18:29:59 IST" name="Login" finished-at="2023-10-05T18:30:05 IST" duration-ms="5795" status="PASS">
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:1, instance:testcases.LoginTest@5143c662]" started-at="2023-10-06T20:30:51 IST" name="Login" finished-at="2023-10-06T20:31:21 IST" duration-ms="30123" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -133,7 +243,353 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@53dbe163]" started-at="2023-10-05T18:30:48 IST" name="tearDown" finished-at="2023-10-05T18:30:48 IST" duration-ms="248" status="PASS">
+      </class> <!-- testcases.LoginTest -->
+      <class name="testcases.Assignment1">
+        <test-method signature="HomePageCheck()[pri:1, instance:testcases.Assignment1@71c27ee8]" started-at="2023-10-06T20:31:21 IST" name="HomePageCheck" depends-on-groups="Login, Login" finished-at="2023-10-06T20:31:51 IST" duration-ms="30405" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.xpath: //p[normalize-space()="Jobs"] (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //p[normalize-space()="Jobs"] (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at utilities.CommonUtil.click(CommonUtil.java:63)
+at testcases.Assignment1.HomePageCheck(Assignment1.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[normalize-space()="Jobs"]"}
+  (Session info: chrome=117.0.5938.149)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0d6e9f6f91c451cc676eae7371e056b5, findElement {using=xpath, value=//p[normalize-space()="Jobs"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\LOVEPR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59121}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59121/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d6e9f6f91c451cc676eae7371e056b5
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePageCheck -->
+        <test-method signature="AskQuestionCheck()[pri:2, instance:testcases.Assignment1@71c27ee8]" started-at="2023-10-06T20:31:52 IST" name="AskQuestionCheck" depends-on-groups="Login" finished-at="2023-10-06T20:31:52 IST" depends-on-methods="testcases.Assignment1.HomePageCheck" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Assignment1.AskQuestionCheck()[pri:2, instance:testcases.Assignment1@71c27ee8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Assignment1.AskQuestionCheck()[pri:2, instance:testcases.Assignment1@71c27ee8] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AskQuestionCheck -->
+        <test-method signature="JobsPageCheck(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testcases.Assignment1@71c27ee8]" started-at="2023-10-06T20:31:52 IST" name="JobsPageCheck" depends-on-groups="Login" finished-at="2023-10-06T20:31:52 IST" depends-on-methods="testcases.Assignment1.AskQuestionCheck" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Assignment1.JobsPageCheck(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testcases.Assignment1@71c27ee8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Assignment1.JobsPageCheck(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testcases.Assignment1@71c27ee8] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JobsPageCheck -->
+        <test-method signature="InboxPageCheck(java.lang.String)[pri:4, instance:testcases.Assignment1@71c27ee8]" started-at="2023-10-06T20:31:52 IST" name="InboxPageCheck" depends-on-groups="Login" finished-at="2023-10-06T20:31:52 IST" depends-on-methods="testcases.Assignment1.JobsPageCheck" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Assignment1.InboxPageCheck(java.lang.String)[pri:4, instance:testcases.Assignment1@71c27ee8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Assignment1.InboxPageCheck(java.lang.String)[pri:4, instance:testcases.Assignment1@71c27ee8] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InboxPageCheck -->
+        <test-method signature="RecrtuierPageCheck()[pri:5, instance:testcases.Assignment1@71c27ee8]" started-at="2023-10-06T20:31:52 IST" name="RecrtuierPageCheck" depends-on-groups="Login" finished-at="2023-10-06T20:31:52 IST" depends-on-methods="testcases.Assignment1.InboxPageCheck" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Assignment1.RecrtuierPageCheck()[pri:5, instance:testcases.Assignment1@71c27ee8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Assignment1.RecrtuierPageCheck()[pri:5, instance:testcases.Assignment1@71c27ee8] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RecrtuierPageCheck -->
+      </class> <!-- testcases.Assignment1 -->
+    </test> <!-- Assignment 1 -->
+    <test started-at="2023-10-06T20:31:52 IST" name="Assignment 2" finished-at="2023-10-06T20:33:18 IST" duration-ms="85638">
+      <class name="testcases.Assignment2">
+        <test-method signature="CareerPageCheck()[pri:1, instance:testcases.Assignment2@6d1ef78d]" started-at="2023-10-06T20:32:22 IST" name="CareerPageCheck" depends-on-groups="Login, Login" finished-at="2023-10-06T20:32:22 IST" duration-ms="429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CareerPageCheck -->
+        <test-method signature="InspirationPathCheck()[pri:2, instance:testcases.Assignment2@6d1ef78d]" started-at="2023-10-06T20:32:22 IST" name="InspirationPathCheck" depends-on-groups="Login" finished-at="2023-10-06T20:32:46 IST" depends-on-methods="testcases.Assignment2.CareerPageCheck" duration-ms="23284" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Unable to perform Inspiration Path check!!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Unable to perform Inspiration Path check!!
+at org.testng.Assert.fail(Assert.java:99)
+at testcases.Assignment2.InspirationPathCheck(Assignment2.java:51)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InspirationPathCheck -->
+        <test-method signature="UpdateCheck()[pri:3, instance:testcases.Assignment2@6d1ef78d]" started-at="2023-10-06T20:32:46 IST" name="UpdateCheck" depends-on-groups="Login" finished-at="2023-10-06T20:33:18 IST" depends-on-methods="testcases.Assignment2.CareerPageCheck" duration-ms="31461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateCheck -->
+        <test-method signature="RecentlyViewCheck()[pri:4, instance:testcases.Assignment2@6d1ef78d]" started-at="2023-10-06T20:33:18 IST" name="RecentlyViewCheck" depends-on-groups="Login" finished-at="2023-10-06T20:33:18 IST" depends-on-methods="testcases.Assignment2.InspirationPathCheck, testcases.Assignment2.CareerPageCheck" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Assignment2.RecentlyViewCheck()[pri:4, instance:testcases.Assignment2@6d1ef78d] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Assignment2.RecentlyViewCheck()[pri:4, instance:testcases.Assignment2@6d1ef78d] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RecentlyViewCheck -->
+      </class> <!-- testcases.Assignment2 -->
+      <class name="testcases.LogOut">
+        <test-method signature="LogOutCheck()[pri:0, instance:testcases.LogOut@1a6c1270]" started-at="2023-10-06T20:33:18 IST" name="LogOutCheck" depends-on-groups="Assignment" finished-at="2023-10-06T20:33:18 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method LogOut.LogOutCheck()[pri:0, instance:testcases.LogOut@1a6c1270] depends on not successfully finished methods in group "Assignment"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method LogOut.LogOutCheck()[pri:0, instance:testcases.LogOut@1a6c1270] depends on not successfully finished methods in group "Assignment"
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogOutCheck -->
+      </class> <!-- testcases.LogOut -->
+      <class name="testcases.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@4b14918a]" started-at="2023-10-06T20:28:22 IST" name="setup" finished-at="2023-10-06T20:29:10 IST" duration-ms="48527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:1, instance:testcases.LoginTest@4b14918a]" started-at="2023-10-06T20:31:52 IST" name="Login" finished-at="2023-10-06T20:32:22 IST" duration-ms="30103" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dummytest]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Automation@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@4b14918a]" started-at="2023-10-06T20:33:18 IST" name="tearDown" finished-at="2023-10-06T20:33:18 IST" duration-ms="542" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
