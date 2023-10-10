@@ -63,7 +63,7 @@ public class Assignment2 extends CommonUtil {
 			click("updateBtn_XPATH");			//Clicking on Update Button
 			System.out.println("Clicked on Update Option!!");
 			
-			String currentWindow = driver.getWindowHandle();
+			String currentWindow = getDriver().getWindowHandle();
 			switchWindow();
 			System.out.println("Switching to Popup Window!!");
 
@@ -88,7 +88,7 @@ public class Assignment2 extends CommonUtil {
 				
 			}
 			click("closePopUp_XPATH");
-			driver.switchTo().window(currentWindow);
+			getDriver().switchTo().window(currentWindow);
 			System.out.println("Switching to main window!!");
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -98,7 +98,7 @@ public class Assignment2 extends CommonUtil {
 	@Test(priority = 4, dependsOnMethods = { "CareerPageCheck", "InspirationPathCheck" }, groups = {"Assignment"})
 	public void RecentlyViewCheck() throws InterruptedException {
 		try {
-			driver.navigate().refresh();
+			getDriver().navigate().refresh();
 			click("careerArrow_XPATH");		//Click on Career Arrow
 			System.out.println("Clicked on Career Arrow!!");
 			
@@ -112,7 +112,7 @@ public class Assignment2 extends CommonUtil {
 			List<String> reviewedCourses = new ArrayList<>();
 			
 			for (int i = 1; i < 4; i++) {
-				reviewedCourses.add(driver.findElement(By.xpath(review + "[" + i + "]")).getText());
+				reviewedCourses.add(getDriver().findElement(By.xpath(review + "[" + i + "]")).getText());
 			}
 
 			//Printing the outcomes of clicked elements
@@ -152,6 +152,6 @@ public class Assignment2 extends CommonUtil {
 		
 		clickedElementTexts.add(getText("selectedCareer_XPATH"));
 		System.out.println(clickedElementTexts.get(i)+" is Selected!!");
-		driver.navigate().back();
+		getDriver().navigate().back();
 	}
 }

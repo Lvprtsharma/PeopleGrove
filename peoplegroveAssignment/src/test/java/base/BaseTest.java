@@ -9,8 +9,9 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.*;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Wait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
@@ -19,7 +20,7 @@ import org.testng.annotations.BeforeSuite;
 public abstract class BaseTest {
 
 	// Declare a static WebDriver instance
-	public static WebDriver driver;
+	private static WebDriver driver;
 
 	// Declare Properties objects for configuration and object repository
 	protected static Properties OR = new Properties();
@@ -27,8 +28,8 @@ public abstract class BaseTest {
 	private static FileInputStream fis;
 
 	// Initialize ExcelReader, WebDriver wait, and Logger
-	public static WebDriver wait;
-	public static Logger log = Logger.getLogger(BaseTest.class);
+	private static Wait<WebDriver> wait;
+	private static Logger log = Logger.getLogger(BaseTest.class);
 
 	// Setup method executed before the test suite
 	@BeforeSuite
@@ -44,9 +45,8 @@ public abstract class BaseTest {
 		}
 
 		try {
-			// Load object repository properties file
 			OR.load(fis);
-			log.info("OR Properties file loaded!!!");
+			getLog().info("OR Properties file loaded!!!");
 		} catch (Exception e) {
 			e.getStackTrace();
 		}
@@ -59,38 +59,59 @@ public abstract class BaseTest {
 		}
 
 		try {
-			// Load configuration properties file
 			config.load(fis);
-			log.info("Config Properties file loaded!!!");
+			getLog().info("Config Properties file loaded!!!");
 		} catch (Exception e) {
 			e.getStackTrace();
 		}
 
-		// Create a WebDriver instance based on the specified browser
-		if (config.getProperty("browser").equals("chrome")) {
-//			
+		switch (config.getProperty("browser")) {
+
+		case "chrome":
+
 //			ChromeOptions options = new ChromeOptions();
 //			options.addArguments("--headless=new");			
 //			driver = new ChromeDriver(options);
 //			System.out.println("Testing in Headless Browser!!");
 
 			driver = new ChromeDriver();
-			log.info("Chrome Browser Launched!!!");
-		} else if (config.getProperty("browser").equals("firefox")) {
+			getLog().info("Chrome Browser Launched!!!");
+			break;
+
+		case "firefox":
 			driver = new FirefoxDriver();
-			log.info("Firefox Browser Launched!!!");
+			getLog().info("Firefox Browser Lauched!!!");
+			break;
+
+		default:
+			System.out.println("browser : " + config.getProperty("browser")
+					+ " is invalid. Launching Chrome as browser of choice..");
+			driver = new ChromeDriver();
+			getLog().info("Chrome Browser Launched!!!");
 		}
 
-		// Navigate to the test URL
 		driver.get(config.getProperty("testurl"));
-		log.info("Navigated to : " + config.getProperty("testurl"));
+		getLog().info("Navigated to : " + config.getProperty("testurl"));
 
-		// Maximize the browser window
 		driver.manage().window().maximize();
-
-		// Set implicit wait timeout
 		driver.manage().timeouts()
 				.implicitlyWait(Duration.ofSeconds(Integer.parseInt(config.getProperty("implicit.wait"))));
+	}
+
+	public static WebDriver getDriver() {
+		return driver;
+	}
+
+	public static Wait<WebDriver> getWait() {
+		return wait;
+	}
+
+	public static Logger getLog() {
+		return log;
+	}
+
+	public static void setLog(Logger log) {
+		BaseTest.log = log;
 	}
 
 	public abstract void click(String locatorKey);
@@ -122,6 +143,6 @@ public abstract class BaseTest {
 	public void tearDown() {
 		// Quit the WebDriver instance
 		driver.quit();
-		log.info("Test Execution Completed!!");
+		getLog().info("Test Execution Completed!!");
 	}
 }

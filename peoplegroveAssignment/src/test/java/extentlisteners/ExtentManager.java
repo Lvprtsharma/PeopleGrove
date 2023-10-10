@@ -51,7 +51,7 @@ public class ExtentManager {
 		fileName = d.toString().replace(":", "_").replace(" ", "_") + ".jpg";
 
 		// Capture a screenshot of the WebDriver and save it to the specified directory
-		File screenshot = ((TakesScreenshot) BaseTest.driver).getScreenshotAs(OutputType.FILE);
+		File screenshot = ((TakesScreenshot) BaseTest.getDriver()).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(screenshot, new File(".//reports//Failure_Screenshot//" + fileName));
 	}
 

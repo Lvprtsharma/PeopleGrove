@@ -31,7 +31,7 @@ public class LoginTest extends SignUpTest {
 				System.out.println("======================== Logged in Successfully ========================");
 			} else {
 				Assert.fail("Login Unsuccessfull!!");
-				driver.quit();
+				getDriver().quit();
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
