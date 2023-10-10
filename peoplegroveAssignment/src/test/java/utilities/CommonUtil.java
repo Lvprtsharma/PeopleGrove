@@ -12,8 +12,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TimeoutException;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
@@ -34,9 +34,10 @@ public class CommonUtil extends BaseTest {
 
 	// Explicit Wait Method
 	public static Wait<WebDriver> explicitWait() {
-		Wait<WebDriver> wait = getWait(); // Declare wait outside of try block
+		Wait<WebDriver> wait = getWait();
 		try {
-			wait = new WebDriverWait(getDriver(), Duration.ofSeconds(Integer.parseInt(config.getProperty("explicit.wait"))));
+			wait = new WebDriverWait(getDriver(),
+					Duration.ofSeconds(Integer.parseInt(config.getProperty("explicit.wait"))));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -56,7 +57,8 @@ public class CommonUtil extends BaseTest {
 					System.out.println("Stale Element Reference Exception Occured!!");
 				} catch (ElementClickInterceptedException e) {
 					JavascriptExecutor js = (JavascriptExecutor) getDriver();
-					js.executeScript("arguments[0].click();", getDriver().findElement(By.xpath(OR.getProperty(locatorKey))));
+					js.executeScript("arguments[0].click();",
+							getDriver().findElement(By.xpath(OR.getProperty(locatorKey))));
 					break;
 				} catch (NoSuchElementException e) {
 					explicitWait()
@@ -89,7 +91,8 @@ public class CommonUtil extends BaseTest {
 					System.out.println("Stale Element Reference Exception Occured!!");
 				} catch (ElementClickInterceptedException e) {
 					JavascriptExecutor js = (JavascriptExecutor) getDriver();
-					js.executeScript("arguments[0].clear();", getDriver().findElement(By.xpath(OR.getProperty(locatorKey))));
+					js.executeScript("arguments[0].clear();",
+							getDriver().findElement(By.xpath(OR.getProperty(locatorKey))));
 					break;
 				} catch (NoSuchElementException e) {
 					explicitWait()

@@ -15,28 +15,20 @@ import org.openqa.selenium.support.ui.Wait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
-//Import statements, if any
-
 public abstract class BaseTest {
 
-	// Declare a static WebDriver instance
 	private static WebDriver driver;
 
-	// Declare Properties objects for configuration and object repository
 	protected static Properties OR = new Properties();
 	protected static Properties config = new Properties();
 	private static FileInputStream fis;
 
-	// Initialize ExcelReader, WebDriver wait, and Logger
 	private static Wait<WebDriver> wait;
 	private static Logger log = Logger.getLogger(BaseTest.class);
 
-	// Setup method executed before the test suite
 	@BeforeSuite
-	public void setup() throws InterruptedException {
-		// Configure log4j using the properties file
+	public void setup() {
 		PropertyConfigurator.configure("./src/test/resources/properties/log4j.properties");
-
 		try {
 			fis = new FileInputStream("./src/test/resources/properties/OR.properties");
 
@@ -66,7 +58,6 @@ public abstract class BaseTest {
 		}
 
 		switch (config.getProperty("browser")) {
-
 		case "chrome":
 
 //			ChromeOptions options = new ChromeOptions();
@@ -138,10 +129,8 @@ public abstract class BaseTest {
 
 	public abstract void switchWindow();
 
-	// Teardown method executed after the test suite
 	@AfterSuite
 	public void tearDown() {
-		// Quit the WebDriver instance
 		driver.quit();
 		getLog().info("Test Execution Completed!!");
 	}
