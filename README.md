@@ -1,14 +1,25 @@
 # PeopleGrove
-Steps to run Project:
-1. Install Java 11 or higher version.
+Instructions for running the project:
+
+1. Ensure that you have Java 11 or a higher version installed on your system.
+
 2. Install Maven 3.9.3.
-3. Clone the project to your local.
-4. In order to run the project, a user must have a valid username and password (if not available please create).
-5. Also one dummy username and password has been provided in testng.xml file in the form fo parameters.
-6. This project can be directly run from the runner.bat file created under src/test/resources/runner.
-8. Other way be via CMD, just go to the project location and run the comand prompt from there. Run the below commands:
-     mvn clean
-     mvn test
-9. The results can be seen from ExtentReports generated under reports folder
-10. Also the emailable-report.html can be found under test-output folder
+
+3. Clone the project to your local machine.
+
+4. To execute the project, you will need a valid username and password. If you don't have them, please create them.
+
+5. Alternatively, you can use the dummy username and password provided in the testng.xml file as parameters.
+
+6. To run the project directly, you can execute the runner.bat file located in src/test/resources/runner.
+
+7. Another way to run the project is via the command prompt (CMD). Navigate to the project's location and run the following commands:
+   ```
+   mvn clean
+   mvn test
+   ```
+
+8. The results of the project can be viewed in the ExtentReports generated under the reports folder.
+
+9. You can also find the emailable-report.html in the test-output folder.
     
