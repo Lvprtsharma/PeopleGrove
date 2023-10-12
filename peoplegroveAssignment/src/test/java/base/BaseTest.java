@@ -85,8 +85,6 @@ public abstract class BaseTest {
 		getLog().info("Navigated to : " + config.getProperty("testurl"));
 
 		driver.manage().window().maximize();
-		driver.manage().timeouts()
-				.implicitlyWait(Duration.ofSeconds(Integer.parseInt(config.getProperty("implicit.wait"))));
 	}
 
 	public static WebDriver getDriver() {
